@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  8 JUL 2014 15:25
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  8 JUL 2014 15:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**RESTfulScorpioDocumentation.tex
-(./RESTfulScorpioDocumentation.tex
+**InstallmateDocumentation.tex
+(./InstallmateDocumentation.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -849,8 +849,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 84.
 Package hyperref Info: Option `breaklinks' set `true' on input line 84.
 Package hyperref Info: Option `bookmarksopen' set `false' on input line 84.
 )
-(./RESTfulScorpioDocumentation.aux)
-\openout1 = `RESTfulScorpioDocumentation.aux'.
+(./InstallmateDocumentation.aux)
+\openout1 = `InstallmateDocumentation.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
@@ -887,9 +887,9 @@ LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
 
-(./RESTfulScorpioDocumentation.out) (./RESTfulScorpioDocumentation.out)
+(./InstallmateDocumentation.out) (./InstallmateDocumentation.out)
 \@outlinefile=\write3
-\openout3 = `RESTfulScorpioDocumentation.out'.
+\openout3 = `InstallmateDocumentation.out'.
 
 LaTeX Info: Redefining \Ref on input line 25.
 
@@ -1003,7 +1003,7 @@ Overfull \hbox (5.3119pt too wide) in paragraph at lines 28--28
 
 Package tocbasic Info: character protrusion at toc deactivated on input line 31
 .
-(./RESTfulScorpioDocumentation.toc
+(./InstallmateDocumentation.toc
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1011,7 +1011,7 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 1.
 )
 \tf@toc=\write4
-\openout4 = `RESTfulScorpioDocumentation.toc'.
+\openout4 = `InstallmateDocumentation.toc'.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/14.4'.
@@ -1019,77 +1019,54 @@ Package microtype Info: Character `029' is missing
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 53.
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 55.
 
 (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 53.
+(Font)              scaled to size 7.65005pt on input line 55.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 64.
+(Font)              scaled to size 8.50006pt on input line 63.
  [1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-(/usr/share/texlive/texmf-dist/tex/latex/listings/lstlang1.sty
-File: lstlang1.sty 2013/06/27 1.5pre1 listings language file
-) [2] [3]
-[4] [5] [6] [7] [8] [9] [10] [11]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 599.
- [12]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 599.
- (./RESTfulScorpioDocumentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 599.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 599.
-
-
-Package rerunfilecheck Warning: File `RESTfulScorpioDocumentation.out' has chan
-ged.
-(rerunfilecheck)                Rerun to get outlines right
-(rerunfilecheck)                or use package `bookmark'.
-
-Package rerunfilecheck Info: Checksums for `RESTfulScorpioDocumentation.out':
-(rerunfilecheck)             Before: E06004F21F9753380F4B44FDA0D868F5;445
-(rerunfilecheck)             After:  7D75A3E35D0E216B0E069D33BD7BEFF4;1225.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 599.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 213.
+ [3]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 213.
+ (./InstallmateDocumentation.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 213.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 213.
+Package rerunfilecheck Info: File `InstallmateDocumentation.out' has not change
+d.
+(rerunfilecheck)             Checksum: E06004F21F9753380F4B44FDA0D868F5;445.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 213.
  ) 
 Here is how much of TeX's memory you used:
- 15195 strings out of 493307
- 227766 string characters out of 6139905
- 774814 words of memory out of 5000000
- 18073 multiletter control sequences out of 15000+600000
+ 14714 strings out of 493307
+ 221213 string characters out of 6139905
+ 533811 words of memory out of 5000000
+ 17842 multiletter control sequences out of 15000+600000
  77953 words of font info for 86 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 61i,9n,58p,1411b,1935s stack positions out of 5000i,500n,10000p,200000b,80000s
-pdfTeX warning (dest): name{subsection.1.6} has been referenced but does not 
-exist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.5} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.4} has been referenced but does not ex
-ist, replaced by a fixed one
-
-pdfTeX warning (dest): name{subsection.1.3} has been referenced but does not ex
-ist, replaced by a fixed one
-
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/
-texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{/usr/share/texlive/texmf-dist/fo
-nts/enc/dvips/iwona/ec-iwona-sc.enc}</usr/share/texlive/texmf-dist/fonts/type1/
-public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/f
-vmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb><
-/usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texm
-f-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on RESTfulScorpioDocumentation.pdf (12 pages, 131461 bytes).
+ 61i,8n,58p,372b,1197s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
+e/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{/usr/share/texlive/texmf-dist/
+fonts/enc/dvips/iwona/ec-iwona-sc.enc}</usr/share/texlive/texmf-dist/fonts/type
+1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera
+/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/shar
+e/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/te
+xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on InstallmateDocumentation.pdf (3 pages, 96058 bytes).
 PDF statistics:
- 478 PDF objects out of 1000 (max. 8388607)
- 453 compressed objects within 5 object streams
- 307 named destinations out of 1000 (max. 500000)
+ 147 PDF objects out of 1000 (max. 8388607)
+ 134 compressed objects within 2 object streams
+ 59 named destinations out of 1000 (max. 500000)
  16441 words of extra memory for PDF output out of 17280 (max. 10000000)
 
