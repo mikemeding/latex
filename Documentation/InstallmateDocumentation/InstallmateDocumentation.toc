@@ -1,25 +1,34 @@
 \contentsline {section}{\numberline {1}AuthService}{1}{section.1}
 \contentsline {subsection}{\numberline {1.1}\textbf {fetchModes}}{1}{subsection.1.1}
 \contentsline {paragraph}{Output (JSON)}{1}{lstnumber.-1.3}
-\contentsline {paragraph}{URL Pattern}{1}{lstnumber.-2.1}
+\contentsline {paragraph}{URL Pattern}{2}{lstnumber.-2.1}
 \contentsline {paragraph}{Explanation}{2}{lstnumber.-2.1}
 \contentsline {subsection}{\numberline {1.2}\textbf {fetchCustomers}}{2}{subsection.1.2}
 \contentsline {paragraph}{Output (Header Text)}{2}{lstnumber.-3.3}
 \contentsline {paragraph}{URL Pattern}{2}{lstnumber.-4.1}
 \contentsline {paragraph}{Explanation}{2}{lstnumber.-4.1}
 \contentsline {subsection}{\numberline {1.3}\textbf {fetchLocations}}{2}{subsection.1.3}
-\contentsline {paragraph}{Output (Header Text)}{2}{lstnumber.-5.5}
+\contentsline {paragraph}{Output (Header Text)}{2}{lstnumber.-5.6}
 \contentsline {paragraph}{URL Pattern}{2}{lstnumber.-6.1}
 \contentsline {paragraph}{Explanation}{2}{lstnumber.-6.1}
 \contentsline {subsection}{\numberline {1.4}\textbf {fetchPanelData}}{2}{subsection.1.4}
-\contentsline {paragraph}{Output (Header Text)}{3}{lstnumber.-7.6}
+\contentsline {paragraph}{Output (Header Text)}{3}{lstnumber.-7.7}
 \contentsline {paragraph}{URL Pattern}{3}{lstnumber.-8.1}
 \contentsline {paragraph}{Explanation}{3}{lstnumber.-8.1}
-\contentsline {subsection}{\numberline {1.5}\textbf {fetchPanelData}}{3}{subsection.1.5}
-\contentsline {paragraph}{Output (Header Text)}{3}{lstnumber.-9.6}
+\contentsline {subsection}{\numberline {1.5}\textbf {savePanelData}}{3}{subsection.1.5}
+\contentsline {paragraph}{Output (Header Text)}{3}{lstnumber.-9.8}
 \contentsline {paragraph}{URL Pattern}{3}{lstnumber.-10.1}
 \contentsline {paragraph}{Explanation}{3}{lstnumber.-10.1}
-\contentsline {subsection}{\numberline {1.6}\textbf {savePanelData}}{3}{subsection.1.6}
-\contentsline {paragraph}{Output (Header Text)}{3}{lstnumber.-11.7}
-\contentsline {paragraph}{URL Pattern}{3}{lstnumber.-12.1}
-\contentsline {paragraph}{Explanation}{3}{lstnumber.-12.1}
+\contentsline {section}{\numberline {2}Unimplemented Methods}{3}{section.2}
+\contentsline {subsection}{\numberline {2.1}fetchDeviceMacs}{3}{subsection.2.1}
+\contentsline {paragraph}{Output (Header Text)}{4}{lstnumber.-11.6}
+\contentsline {paragraph}{URL Pattern}{4}{lstnumber.-12.1}
+\contentsline {paragraph}{Explanation}{4}{lstnumber.-12.1}
+\contentsline {subsection}{\numberline {2.2}pingMac}{4}{subsection.2.2}
+\contentsline {paragraph}{Output (Header Text)}{4}{lstnumber.-13.6}
+\contentsline {paragraph}{URL Pattern}{4}{lstnumber.-14.1}
+\contentsline {paragraph}{Explanation}{4}{lstnumber.-14.1}
+\contentsline {subsection}{\numberline {2.3}getOpStatus}{4}{subsection.2.3}
+\contentsline {paragraph}{Output (Header Text)}{4}{lstnumber.-15.6}
+\contentsline {paragraph}{URL Pattern}{4}{lstnumber.-16.1}
+\contentsline {paragraph}{Explanation}{4}{lstnumber.-16.1}

@@ -1,9 +1,9 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  8 JUL 2014 15:58
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  9 JUL 2014 10:29
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
-**InstallmateDocumentation.tex
-(./InstallmateDocumentation.tex
+**RESTfulTemplate.tex
+(./RESTfulTemplate.tex
 LaTeX2e <2011/06/27>
 Babel <3.9f> and hyphenation patterns for 78 languages loaded.
 (/usr/share/texlive/texmf-dist/tex/latex/koma-script/scrartcl.cls
@@ -849,8 +849,8 @@ Package hyperref Info: Option `colorlinks' set `true' on input line 84.
 Package hyperref Info: Option `breaklinks' set `true' on input line 84.
 Package hyperref Info: Option `bookmarksopen' set `false' on input line 84.
 )
-(./InstallmateDocumentation.aux)
-\openout1 = `InstallmateDocumentation.aux'.
+(./RESTfulTemplate.aux)
+\openout1 = `RESTfulTemplate.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 25.
 LaTeX Font Info:    ... okay on input line 25.
@@ -887,9 +887,9 @@ LaTeX Info: Redefining \ref on input line 25.
 LaTeX Info: Redefining \pageref on input line 25.
 LaTeX Info: Redefining \nameref on input line 25.
 
-(./InstallmateDocumentation.out) (./InstallmateDocumentation.out)
+(./RESTfulTemplate.out) (./RESTfulTemplate.out)
 \@outlinefile=\write3
-\openout3 = `InstallmateDocumentation.out'.
+\openout3 = `RESTfulTemplate.out'.
 
 LaTeX Info: Redefining \Ref on input line 25.
 
@@ -1003,7 +1003,7 @@ Overfull \hbox (5.3119pt too wide) in paragraph at lines 28--28
 
 Package tocbasic Info: character protrusion at toc deactivated on input line 31
 .
-(./InstallmateDocumentation.toc
+(./RESTfulTemplate.toc
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/pplj/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
@@ -1011,7 +1011,7 @@ LaTeX Font Info:    Font shape `T1/pplj/bx/n' in size <10> not available
 (Font)              Font shape `T1/pplj/b/n' tried instead on input line 1.
 )
 \tf@toc=\write4
-\openout4 = `InstallmateDocumentation.toc'.
+\openout4 = `RESTfulTemplate.toc'.
 
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/14.4'.
@@ -1019,54 +1019,51 @@ Package microtype Info: Character `029' is missing
 Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/10'.
 (microtype)             Ignoring protrusion settings for this character.
-LaTeX Font Info:    Try loading font information for T1+fvm on input line 55.
-
-(/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
+LaTeX Font Info:    Try loading font information for T1+fvm on input line 51.
+ (/usr/share/texlive/texmf-dist/tex/latex/bera/t1fvm.fd
 File: t1fvm.fd 2004/09/07 scalable font definitions for T1/fvm.
 )
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 7.65005pt on input line 55.
+(Font)              scaled to size 7.65005pt on input line 51.
 Package microtype Info: Loading generic settings for font family
 (microtype)             `fvm' (encoding: T1).
 (microtype)             For optimal results, create family-specific settings.
 (microtype)             See the microtype manual for details.
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
-(Font)              scaled to size 8.50006pt on input line 63.
- [1
+(Font)              scaled to size 8.50006pt on input line 57.
+[1
 
 
-{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}] [2] [3]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
- [4]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
- (./InstallmateDocumentation.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
-Package rerunfilecheck Info: File `InstallmateDocumentation.out' has not change
-d.
-(rerunfilecheck)             Checksum: 7F0E41ED84D93D3CE9D53808B169B397;629.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
+{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 97.
+ [2]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 97.
+
+(./RESTfulTemplate.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 97.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 97.
+Package rerunfilecheck Info: File `RESTfulTemplate.out' has not changed.
+(rerunfilecheck)             Checksum: 560271C54D39884B16C660DE18278CC7;218.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 97.
  ) 
 Here is how much of TeX's memory you used:
- 14756 strings out of 493307
- 221761 string characters out of 6139905
- 535811 words of memory out of 5000000
- 17859 multiletter control sequences out of 15000+600000
- 77953 words of font info for 86 fonts, out of 8000000 for 9000
+ 14626 strings out of 493307
+ 219891 string characters out of 6139905
+ 480802 words of memory out of 5000000
+ 17801 multiletter control sequences out of 15000+600000
+ 76497 words of font info for 83 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 61i,9n,58p,372b,1842s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,8n,58p,363b,1188s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{/usr/share/texlive/texmf-dist/
-fonts/enc/dvips/iwona/ec-iwona-sc.enc}</usr/share/texlive/texmf-dist/fonts/type
+e/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{/usr/share/texlive/texmf-di
+st/fonts/enc/dvips/iwona/ec-iwona.enc}</usr/share/texlive/texmf-dist/fonts/type
 1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera
-/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/shar
-e/texlive/texmf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/te
-xmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
-Output written on InstallmateDocumentation.pdf (4 pages, 102803 bytes).
+/fvmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb
+></usr/share/texlive/texmf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on RESTfulTemplate.pdf (2 pages, 47645 bytes).
 PDF statistics:
- 192 PDF objects out of 1000 (max. 8388607)
- 178 compressed objects within 2 object streams
- 84 named destinations out of 1000 (max. 500000)
- 16465 words of extra memory for PDF output out of 17280 (max. 10000000)
+ 70 PDF objects out of 1000 (max. 8388607)
+ 61 compressed objects within 1 object stream
+ 15 named destinations out of 1000 (max. 500000)
+ 16417 words of extra memory for PDF output out of 17280 (max. 10000000)
 

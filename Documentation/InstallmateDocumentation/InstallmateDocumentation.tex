@@ -80,7 +80,7 @@ BASE-URL/installmate/fetchModes
 
 \begin{lstlisting}
 #Curl script
-cu_{}rl -H "Origin:*" -v -X POST 
+curl -H "Origin:*" -v -X POST 
 	BASE-URL/installmate/fetchCustomers
 \end{lstlisting}
 
@@ -107,6 +107,7 @@ BASE-URL/installmate/fetchCustomers
 #Curl script
 curl -v -H "Accept: application/json" 
 	-H "Content-Type: application/json" 
+	-H "Origin:*"
 	-X POST -d "{\"customerName\":\"laber\"}" 
 	BASE-URL/installmate/fetchLocations
 \end{lstlisting}
@@ -134,34 +135,7 @@ BASE-URL/installmate/fetchLocations
 #Curl script
 curl -v -H "Accept: application/json" 
 	-H "Content-Type: application/json" 
-	-X POST -d "{\"customerName\":\"laber\"
-	,\"locationName\":\"lall\"}" 
-	BASE-URL/installmate/fetchPanelData
-\end{lstlisting}
-
-%Output
-\paragraph{Output (Header Text)}~
-\begin{lstlisting}[language=json]
-{"anObject":"aString"}
-\end{lstlisting}
-
-%Url Pattern
-\paragraph{URL Pattern} 
-~\newline
-BASE-URL/installmate/fetchPanelData
-
-%Explanation
-\paragraph{Explanation} Again, if you understand everything else up to this point then you should have no problem figuring out what is going on here.  
-
-
-%------------------------------------------------
-
-\subsection{\textbf{fetchPanelData}}
-
-\begin{lstlisting}
-#Curl script
-curl -v -H "Accept: application/json" 
-	-H "Content-Type: application/json" 
+	-H "Origin:*"
 	-X POST -d "{\"customerName\":\"laber\"
 	,\"locationName\":\"lall\"}"
 	BASE-URL/installmate/fetchPanelData
@@ -190,6 +164,7 @@ BASE-URL/installmate/fetchPanelData
 #Curl script
 curl -v -H "Accept: application/json" 
 	-H "Content-Type: application/json" 
+	-H "Origin:*"
 	-X POST -d "{\"customerName\":\"laber\"
 	,\"locationName\":\"lall\",
 	,\"panelData\":\"\"{\"variable\":\"some_data\"}\"\",}" 
@@ -209,5 +184,91 @@ BASE-URL/installmate/savePanelData
 
 %Explanation
 \paragraph{Explanation} You put the JSON in, some magic happens and BLAM! Your stuff gets saved. Amazing!
+
+%------------------------------------------------
+
+\section{Unimplemented Methods}
+
+%------------------------------------------------
+
+\subsection{fetchDeviceMacs}
+
+\begin{lstlisting}
+#Curl script
+curl -v -H "Accept: application/json" 
+	-H "Content-Type: application/json" 
+	-H "Origin:*"
+	-X POST -d "Likely will be customer or location id" 
+	BASE-URL/installmate/fetchDeviceMacs
+\end{lstlisting}
+
+%Output
+\paragraph{Output (Header Text)}~
+\begin{lstlisting}[language=json]
+//A JSON list of device MAC's
+\end{lstlisting}
+
+%Url Pattern
+\paragraph{URL Pattern} 
+~\newline
+BASE-URL/installmate/fetchDeviceMacs
+
+%Explanation
+\paragraph{Explanation} This method is not yet fully complete. Its likely that this will have a small argument and will return a list of mac addresses.
+
+%------------------------------------------------
+
+\subsection{pingMac}
+
+\begin{lstlisting}
+#Curl script
+curl -v -H "Accept: application/json" 
+	-H "Content-Type: application/json" 
+	-H "Origin:*"
+	-X POST 
+	BASE-URL/installmate/pingMac/{macAddr}
+\end{lstlisting}
+
+%Output
+\paragraph{Output (Header Text)}~
+\begin{lstlisting}[language=json]
+// boolean status update
+\end{lstlisting}     
+
+%Url Pattern
+\paragraph{URL Pattern} 
+~\newline
+BASE-URL/installmate/pingMac/{macAddr}
+
+%Explanation
+\paragraph{Explanation} Checks that the mac exists and will likely return a boolean JSON object or an error status.
+
+%------------------------------------------------
+
+\subsection{getOpStatus}
+
+\begin{lstlisting}
+#Curl script
+curl -v -H "Accept: application/json" 
+	-H "Content-Type: application/json" 
+	-H "Origin:*"
+	-X POST 
+	BASE-URL/installmate/getOpStatus
+\end{lstlisting}
+
+%Output
+\paragraph{Output (Header Text)}~
+\begin{lstlisting}[language=json]
+//a JSON object describing the status
+\end{lstlisting}
+
+%Url Pattern
+\paragraph{URL Pattern} 
+~\newline
+BASE-URL/installmate/getOpStatus
+
+%Explanation
+\paragraph{Explanation} A method that will return the current op status.
+
 
 \end{document}
