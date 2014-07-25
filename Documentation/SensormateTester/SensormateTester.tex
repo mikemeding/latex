@@ -1,0 +1,61 @@
+%%% Template originaly created by Karol Kozioł (mail@karol-koziol.net) and modified for ShareLaTeX use
+
+\documentclass[a4paper,11pt]{article}
+
+\usepackage{mike}
+
+% my own titles
+\makeatletter
+\renewcommand{\maketitle}{
+\begin{center}
+\vspace{2ex}
+{\huge \textsc{\@title}}
+\vspace{1ex}
+\\
+\linia\\
+\@author \hfill \@date
+\vspace{4ex}
+\end{center}
+}
+\makeatother
+%%%
+
+% custom footers and headers
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{}
+\chead{}
+\rhead{}
+\lfoot{Assignment \textnumero{} 5}
+\cfoot{}
+\rfoot{Page \thepage}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+%%%----------%%%----------%%%----------%%%----------%%%
+
+\begin{document}
+
+\title{Sensormate Testing}
+
+\author{Michael Meding, Outsmart Power Systems Inc.}
+
+\date{2014/07/25}
+
+\maketitle
+
+\section*{Setup Tester}
+\subsection*{Step 1}
+First off the testing unit should be turned on with the switch in the back and the lights on the front should be OFF. The lights on the front indicate that the test leads are live NOT that the unit is powered.
+\subsection*{Step 2}
+With the test switch in the off position a new  sensormate board should be properly attached to the tester with the torque driver set to the number 4 setting. ~2 kgf/cm
+\subsection*{Step 3}
+After the device is properly attached turn the test switch to the ON position. The lights on the front of the box will light up indicating that the test unit now has line voltage.
+
+\section*{Run Tests}
+\subsection*{Step 1}
+At the PC there will be a putty serial console window. This is the only console that you need for the duration of these tests. Try typing \textbf{st} and seeing if you get any output. This will print the current status of all the devices known to the test unit. 
+\subsection*{Step 2}
+You will 
+
+\end{document}
