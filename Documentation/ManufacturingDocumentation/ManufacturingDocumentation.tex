@@ -1,0 +1,194 @@
+\documentclass[
+10pt, % Main document font size
+letterpaper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+%twoside, % Two page layout (page indentation for binding and different headers)
+headinclude,footinclude, % Extra spacing for the header and footer
+BCOR5mm, % Binding correction
+]{scrartcl}
+
+
+\usepackage{mike}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Manufacturing REST Documentation}} % The article title
+
+\author{\spacedlowsmallcaps{Michael Meding* , mmeding@outsmartinc.com}} % The article author(s) - author affiliations need to be specified in the AUTHOR AFFILIATIONS block
+
+\date{} % An optional date to appear under the author(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title and abstract box
+
+\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+ 
+\section*{Abstract}
+This documentation covers how to use the outsmart manufacturing REST API. These RESTful endpoints track MAC addresses of units that were manufactured or issue MAC addressses to devices that are being manufactured. Throughout this documentation the term BASEPATH should be replaced with "https://ops.outsmartinc.com/manufacturing" to get the fully qualified URL.
+
+ 
+
+%------------------------------------------------
+
+\section{Manufacturing}
+
+%------------------------------------------------
+
+\subsection{ping}
+%Code Snippet
+\begin{lstlisting}
+#Curl script
+curl -v -X POST -H "Accept: application/json" BASEPATH/ping
+\end{lstlisting}
+
+%Output
+\paragraph{Output (JSON)}~
+\begin{lstlisting}[language=json]
+{"status":"OK","version":1.0,"errorCode":0,"errorMsg":null,"fieldErrors":null,"data":null}
+\end{lstlisting}
+
+
+%Url Pattern
+\paragraph{URL Pattern} 
+~\newline
+BASE-URL/ping
+
+%Explanation
+\paragraph{Explanation}
+This is as straightforward as it gets. You call this method and it returns to you a JSON status. Anything else indicates error with the server.
+
+%------------------------------------------------
+
+\subsection{getNewMac}
+%Code Snippet
+\begin{lstlisting}
+#Curl script 
+curl -v -X POST BASEPATH/getNewMac/(DeviceType)
+\end{lstlisting}
+
+%Output
+\paragraph{Output (JSON)}~
+\begin{lstlisting}[language=json]
+//For this I output I used OneUpEnergyMateRev0 for DeviceType
+{"status":"OK","version":1.0,"data":{"mac":"0x11E000001"}}
+\end{lstlisting}
+
+%Url Pattern
+\paragraph{URL Pattern} 
+~\newline
+BASE-URL/getNewMac/\{DeviceType\}
+
+%Explanation
+\paragraph{Explanation}
+There are several device types that may be used in the URL to alter the prefix of the MAC address needed.
+~\newline
+\begin{tabular}{| l | r |}
+\hline
+\textbf{Request Name} & \textbf{MAC Prefix} \\
+\hline
+OneUpEnergyMateRev0 & 0x11E...... \\
+OneUpEnergyMateRev1 & 0x123 \\
+OneUpEnergyMateRev2 & 0x125 \\
+ThreeUpEnergyMateRev0 & 0x120 \\
+ThreeUpEnergyMateRev1 & 0x122 \\
+ThreeUpEnergyMateRev2 & 0x124 \\
+ThreeUpEnergyMateRev3 & 0x126 \\
+SMRev0 & 0x134 \\
+\hline
+\end{tabular}
+
+%------------------------------------------------
+
+\subsection{getNewMacs}
+%Code Snippet
+\begin{lstlisting}
+#Curl script 
+curl -v -X POST BASEPATH/getNewMacs/(DeviceType)/{Amount}
+\end{lstlisting}
+
+%Output
+\paragraph{Output (JSON)}~
+\begin{lstlisting}[language=json]
+//For this I output I used OneUpEnergyMateRev0 for DeviceType and 10, for Amount
+{"status":"OK","version":1.0,"list":["0x11E000002","0x11E000003","0x11E000004","0x11E000005","0x11E000006","0x11E000007","0x11E000008","0x11E000009","0x11E00000A","0x11E00000B"]}
+\end{lstlisting}
+
+%Url Pattern
+\paragraph{URL Pattern} 
+~\newline
+BASE-URL/getNewMacs/\{DeviceType\}/\{Amount\}
+
+%Explanation
+\paragraph{Explanation}
+This call is slightly different from the prior call in that you can request multiple MAC addresses at once. Be mindful that the name is getNewMacs NOT getNewMac. 
+~\newline
+\begin{tabular}{| l | r |}
+\hline
+\textbf{Request Name} & \textbf{MAC Prefix} \\
+\hline
+OneUpEnergyMateRev0 & 0x11E \\
+OneUpEnergyMateRev1 & 0x123 \\
+OneUpEnergyMateRev2 & 0x125 \\
+ThreeUpEnergyMateRev0 & 0x120 \\
+ThreeUpEnergyMateRev1 & 0x122 \\
+ThreeUpEnergyMateRev2 & 0x124 \\
+ThreeUpEnergyMateRev3 & 0x126 \\
+SMRev0 & 0x134 \\
+\hline
+\end{tabular}
+
+%------------------------------------------------
+
+\subsection{saveEnergyData}
+%Code Snippet
+\begin{lstlisting}[language=Java]
+// Java RPC request
+HttpRpcReq<JSONObject> req = HttpRpcFactory.newJsonRequest(url, "saveEnergyData");
+ req.setStatusIndicator(false);  // we need this to maintain backward compatibility
+HttpRpcRes<JSONObject> response = req.invoke(jo, true, timeout);
+\end{lstlisting}
+
+%Output
+\paragraph{Output (JSON)}~
+\begin{lstlisting}[language=json]
+{"status":"OK","version":1.0,"errorCode":0,"errorMsg":null,"fieldErrors":null,"data":null}
+\end{lstlisting}
+
+%Url Pattern
+\paragraph{URL Pattern} 
+~\newline
+BASE-URL/saveEnergyData
+
+%Explanation
+\paragraph{Explanation}
+In the above Java example we stream a potentially large JSON object to the endpoint. Unfortunately we only actually care about a few of the fields from this object but will likely add more in the future. The fields that we care about are detailed below.
+~\newline\newline\textsf{}
+\begin{tabular}{| l | r |}
+\hline
+\textbf{Type} & \textbf{JSON Name} \\
+\hline
+String & deviceMAC \\
+bool & deviceCalibrationPassed \\
+String & deviceFWVersion \\
+String & fixtureCalibrationDate \\
+bool & deviceSensorReversedA \\
+bool & deviceSensorReversedB \\
+bool & deviceSensorReversedC \\
+int & deviceNumberofports \\
+\hline
+\end{tabular}
+
+\end{document}
