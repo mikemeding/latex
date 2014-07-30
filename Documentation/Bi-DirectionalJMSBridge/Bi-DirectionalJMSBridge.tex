@@ -1,0 +1,192 @@
+\documentclass[
+10pt, % Main document font size
+letterpaper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+%twoside, % Two page layout (page indentation for binding and different headers)
+headinclude,footinclude, % Extra spacing for the header and footer
+BCOR5mm, % Binding correction
+]{scrartcl}
+
+% my structure and syntax highlighting
+\usepackage{mike}
+% include image package and the images folder
+\usepackage{graphicx}
+\graphicspath{ {Diagrams/} }
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Bi-Directional JMS Bridge}} % The article title
+
+\author{\spacedlowsmallcaps{Michael Meding* , mmeding@outsmartinc.com}} % The article author(s) - author affiliations need to be specified in the AUTHOR AFFILIATIONS block
+
+\date{} % An optional date to appear under the author(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title and abstract box
+
+\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+ 
+\section*{Abstract}
+This article details the steps involved in creating a bi-directional message bridge between two applications using JMS and HornetQ. For this implementation I used Wildfly as my Java application server but you could use Glassfish or simalar and the implementation would be near identical. Additionally, I assume that the reader of this article has prior knowledge of Java EE 7, EJB, RESTful web services, ActiveMQ and Wildfly application servers.
+
+
+ %------------------------------------------------
+
+\section{Overview}
+
+%------------------------------------------------
+
+\includegraphics[width=11.75cm]{FlowchartPic} % FLOWCHART
+\paragraph{}~\newline
+As shown by the diagram above HornetQ and bridge definitions are contained in wildfly configuration. The orion application simply includes two classes to communicate back and forth across the two bridges. Messages are managed by ActiveMQ. ActiveMQ is included as an additional module to wildfly and can be accessed by a web console at localhost:61616 when deployed with default settings.
+
+%------------------------------------------------
+
+\section{Setup Wildfly Application Server}
+
+%------------------------------------------------
+
+%Code Snippet
+\lstsetxml
+\begin{lstlisting}[language=XML]
+<!-- placed in the <hornetq-server> definition -->
+<jms-destinations>
+	<jms-queue name="JMSBridgeSourceQueue">
+		<entry name="java:/queue/JMSBridgeSourceQ"/>
+		<entry name="java:jboss/exported/jms/queue/JMSBridgeSourceQ"/>
+		<durable>true</durable>
+	</jms-queue>
+	<jms-queue name="AMQTargetQ">
+		<entry name="java:/queue/AMQTargetQ"/>
+		<entry name="java:jboss/exported/jms/queue/AMQTargetQ"/>
+		<durable>true</durable>
+	</jms-queue>
+</jms-destinations>
+
+<!-- Added after the <hornetq-server> definition -->
+
+<!-- The forward bridge -->
+<jms-bridge name="to-active-mq">
+	<source>
+		<connection-factory name="ConnectionFactory"/>
+		<destination name="queue/JMSBridgeSourceQ"/>
+	</source>
+	<target>
+		<connection-factory name="AMQConnectionFactory"/>
+		<destination name="queue/JMSBridgeTargetQ"/>
+	</target>
+	<quality-of-service>AT_MOST_ONCE</quality-of-service>
+	<failure-retry-interval>1000</failure-retry-interval>
+	<max-retries>-1</max-retries>
+	<max-batch-size>10</max-batch-size>
+	<max-batch-time>100</max-batch-time>
+</jms-bridge>
+<!-- The return bridge -->
+<jms-bridge name="from-active-mq">
+	<source>
+		<connection-factory name="AMQConnectionFactory"/>
+		<destination name="queue/AMQSourceQ"/>
+	</source>
+	<target>
+		<connection-factory name="ConnectionFactory"/>
+		<destination name="queue/AMQTargetQ"/>
+	</target>
+	<quality-of-service>AT_MOST_ONCE</quality-of-service>
+	<failure-retry-interval>1000</failure-retry-interval>
+	<max-retries>-1</max-retries>
+	<max-batch-size>10</max-batch-size>
+	<max-batch-time>100</max-batch-time>
+</jms-bridge>
+}
+\end{lstlisting}
+
+\paragraph{standalone-full.xml} ~\newline\newline
+This file is the standard configuration file of the Wildfly application server. For this to work properly you must add the HornetQ module to Wildfly before modifying the standalone-full.xml. Instructions to do this can be found easly online. The modifications that must be added for a bi-directional bridge are detailed below. The names given are arbitrary and can be whatever you would like. Throughout this article I follow a pattern of names using source as my origin and target as the endpoint. I would advise following a simalar pattern as it begins to get confusing when trying to detirmine the path of a message. Also keep in mind that the names in jms-destinations must match those in jms-bridge.\newline
+
+%------------------------------------------------
+
+\section{JVM Code}
+
+%------------------------------------------------
+
+\subsection {\textbf{Incomming Side (To JVM)}}
+
+\lstsetjava
+\begin{lstlisting}[language=Java]
+@MessageDriven(activationConfig = {
+// these names must match
+    @ActivationConfigProperty(propertyName = "destination", propertyValue = "java:jboss/exported/jms/queue/AMQTargetQ"),
+    @ActivationConfigProperty(propertyName = "destinationType", propertyValue = "javax.jms.Queue"),
+    @ActivationConfigProperty(propertyName = "useJNDI", propertyValue = "true"),
+    @ActivationConfigProperty(propertyName = "acknowledgeMode", propertyValue = "Auto-acknowledge")
+})
+
+public class MessageReceiverAsync implements MessageListener {
+
+    @Override
+    public void onMessage(Message message) {
+        try {
+            TextMessage tm = (TextMessage) message;
+            System.out.println("Message received: " + tm.getText());
+        } catch (JMSException ex) {
+            Logger.getLogger(MessageReceiverAsync.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+}
+\end{lstlisting}
+
+\paragraph{}
+This code implements a listener that as soon as a message is posted to AMQTargetQ  (the return bridge) it takes that message and simply prints it out to console. This code runs on the JVM side according to the first diagram above and must be implemented within an EJB to function properly.
+
+%------------------------------------------------
+
+\subsection{\textbf{Outgoing Side (From JVM)}}
+
+\lstsetjava
+\begin{lstlisting}[language=Java]
+@Stateless
+public class MessageSender {
+
+    @Inject
+    @JMSConnectionFactory("java:comp/DefaultJMSConnectionFactory")
+    JMSContext context;
+
+    @Resource(mappedName = "java:jboss/exported/jms/queue/JMSBridgeSourceQ")
+    Queue queue;
+
+    public void sendMessage(String message) {
+        context.createProducer().send(queue, message);
+    }
+}
+\end{lstlisting}
+
+\paragraph{}
+This is quite straightforward code which simply puts the message into the Queue. You must ensure that your factory name matches that in your standalone-full.xml. For this example I simply used the default that came with the module.
+
+
+%------------------------------------------------
+
+\section{Application Code}
+
+%------------------------------------------------
+
+\subsection{\textbf{Outgoing Side (To Application)}}
+\subsection{\textbf{Outgoing Side (From Application)}}
+
+
+
+
+\end{document}

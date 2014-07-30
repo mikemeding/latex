@@ -26,7 +26,7 @@
 \lhead{}
 \chead{}
 \rhead{}
-\lfoot{Assignment \textnumero{} 5}
+\lfoot{Sensormate Testing}
 \cfoot{}
 \rfoot{Page \thepage}
 \renewcommand{\headrulewidth}{0pt}
@@ -50,12 +50,33 @@ First off the testing unit should be turned on with the switch in the back and t
 \subsection*{Step 2}
 With the test switch in the off position a new  sensormate board should be properly attached to the tester with the torque driver set to the number 4 setting. ~2 kgf/cm
 \subsection*{Step 3}
-After the device is properly attached turn the test switch to the ON position. The lights on the front of the box will light up indicating that the test unit now has line voltage.
+After the device is properly attached turn the test switch to the ON position. The lights on the front of the box will light up indicating that the test unit now has line voltage and is ready for software tests.
 
 \section*{Run Tests}
 \subsection*{Step 1}
 At the PC there will be a putty serial console window. This is the only console that you need for the duration of these tests. Try typing \textbf{st} and seeing if you get any output. This will print the current status of all the devices known to the test unit. 
 \subsection*{Step 2}
-You will 
+Type \textbf{dyy}. This will start device discovery and you should see some lights start flashing on the sensormate. You will not be alerted when this process is finished so you must type \textbf{st} periodically to check.
+\subsection*{Step 3}
+When \textbf{dyy} is finished you will see another mac address for the new device. The final test is to ask the new device for some measurements using the \textbf{bl} command. This command requires you to type the mac addresss as an argument. For example you would type \textbf{bl} 0x134000123 to get the measurements from the 123 device.
+\subsection*{Step 4}
+If you see measurements for all fields returned from the \textbf{bl} command then the device is considered good. You may now turn the switch on the testing unit to OFF and remove the device.
+
+\section*{Summery}
+This is a quick summery of all the commands that you need for testing.
+~\newline
+
+\begin{tabular}{| c | l |}
+\hline
+\textbf{Command} & \textbf{Explanation} \\
+\hline
+\textbf{st} & Status of the tester and all known devices \\
+\textbf{dyy} & Device discovery for fetching the new device \\
+\textbf{bl \{mac\}} & Gives you the measurements from the specified mac address \\
+\hline
+\end{tabular}
+
+
+
 
 \end{document}
