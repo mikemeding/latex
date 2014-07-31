@@ -47,25 +47,25 @@ Abstract text
 %------------------------------------------------
 
 \subsection{subsection1}
+
+%------------------------------------------------
+
+\paragraph{XML}~
 %Code Snippet
-\begin{lstlisting}
-#Curl script
+\lstsetxml % bring in xml highlight settings
+\begin{lstlisting}[language=XML]
+<coolstory name="fancy xml">
+	<bro> broski </bro>
+</coolstory>
 \end{lstlisting}
 
-%Output
-\paragraph{Output (JSON)}~
+\paragraph{JSON}~
+%Some Cool JSON
+\lstsetjson
 \begin{lstlisting}[language=json]
-//JSON here
+{"deviceTagId"="1398368055262","displayId"="1398368055263","name"="device_tags","locationId"="750","deviceTag" "id"="1398368055263"}
 \end{lstlisting}
 
-
-%Url Pattern
-\paragraph{URL Pattern} 
-~\newline
-BASE-URL/
-
-%Explanation
-\paragraph{Explanation}
 
 %------------------------------------------------
 
@@ -74,24 +74,17 @@ BASE-URL/
 %------------------------------------------------
 
 \subsection{subsection2}
+
+%------------------------------------------------
+
+\paragraph{JAVA}~
 %Code Snippet
-\begin{lstlisting}
-#Curl script 
+\lstsetjava % brings in the java code highlight parameters
+\begin{lstlisting}[language=Java]
+// some java code here
+public class JavaAwesome{
+	private static String WOW = "MUCH JAVA";
+}
 \end{lstlisting}
-
-%Output
-\paragraph{Output (JSON)}~
-\begin{lstlisting}[language=json]
-//JSON here
-\end{lstlisting}
-
-
-%Url Pattern
-\paragraph{URL Pattern} 
-~\newline
-BASE-URL/
-
-%Explanation
-\paragraph{Explanation}
 
 \end{document}
