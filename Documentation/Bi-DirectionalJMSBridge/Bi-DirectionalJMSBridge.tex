@@ -183,10 +183,93 @@ This is quite straightforward code which simply puts the message into the Queue.
 
 %------------------------------------------------
 
-\subsection{\textbf{Outgoing Side (To Application)}}
-\subsection{\textbf{Outgoing Side (From Application)}}
+\subsection{\textbf{Outgoing Side (Producer)}}
+\lstsetjava
+\begin{lstlisting}[language=Java]
+try {
+	// Create a ConnectionFactory
+	ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://opmq1.outsmartinc.com:61616");
+
+	// Create a Connection
+	Connection connection = connectionFactory.createConnection();
+	connection.start();
+
+	// Create a Session
+	Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+
+	// Create the destination (Topic or Queue)
+	Destination destination = session.createQueue("AMQSourceQ");
+
+	// Create a MessageProducer from the Session to the Topic or Queue
+	MessageProducer producer = session.createProducer(destination);
+	producer.setDeliveryMode(DeliveryMode.PERSISTENT);
+
+	// Create a message
+	//String text = "Hello world! From: " + Thread.currentThread().getName() + " : " + this.hashCode();
+	String text = "new test message";
+	TextMessage message = session.createTextMessage(text);
+
+	// Tell the producer to send the message
+	System.out.println("Sent message: " + message.hashCode() + " : " + Thread.currentThread().getName());
+	producer.send(message);
+
+	// Clean up
+	session.close();
+	connection.close();
+	
+} catch (Exception e) {
+	System.out.println("Caught: " + e);
+	e.printStackTrace();
+}
+\end{lstlisting}
+
+\paragraph{}
+The pattern for both the producer and consumer are quite simalar. Once you have a handle on the queue you just push or pull a message from it.
+
+\subsection{\textbf{Incomming Side (Consumer)}}
+\lstsetjava
+\begin{lstlisting}[language=Java]
+try {
+	// Create a ConnectionFactory
+	ActiveMQConnectionFactory connectionFactory = new ActiveMQConnectionFactory("tcp://opmq1.outsmartinc.com:61616");
+
+	// Create a Connection
+	Connection connection = connectionFactory.createConnection();
+	connection.start();
+
+	// Create a Session
+	Session session = connection.createSession(false, Session.AUTO_ACKNOWLEDGE);
+
+	// Create the destination (Topic or Queue)
+	Destination destination = session.createQueue("JMSBridgeTargetQ");
+
+	// Create a MessageConsumer from the Session to the Topic or Queue
+	MessageConsumer consumer = session.createConsumer(destination);
+
+	// Wait for a message
+	Message message = consumer.receive(1000);
+
+	if (message instanceof TextMessage) {
+		TextMessage textMessage = (TextMessage) message;
+		String text = textMessage.getText();
+		System.out.println("Received: " + text);
+	} else {
+		System.out.println("Received: " + message);
+	}
+
+	consumer.close();	
+	session.close();
+	connection.close();
+	
+	} catch (Exception e) {
+		System.out.println("Caught: " + e);
+		e.printStackTrace();
+}
+\end{lstlisting}
 
 
+\paragraph{}
+This is not a listener like the JVM side was. This will timeout after 1 second although if more time than that is required then something has gone wrong. Be sure to check the ActiveMQ console for message status.
 
 
 \end{document}

@@ -8,5 +8,7 @@
 \contentsline {subsection}{\numberline {3.2}\textbf {Outgoing Side (From JVM)}}{3}{subsection.3.2}
 \contentsline {paragraph}{}{4}{lstnumber.-3.14}
 \contentsline {section}{\numberline {4}Application Code}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}\textbf {Outgoing Side (To Application)}}{4}{subsection.4.1}
-\contentsline {subsection}{\numberline {4.2}\textbf {Outgoing Side (From Application)}}{4}{subsection.4.2}
+\contentsline {subsection}{\numberline {4.1}\textbf {Outgoing Side (Producer)}}{4}{subsection.4.1}
+\contentsline {paragraph}{}{5}{lstnumber.-4.35}
+\contentsline {subsection}{\numberline {4.2}\textbf {Incomming Side (Consumer)}}{5}{subsection.4.2}
+\contentsline {paragraph}{}{5}{lstnumber.-5.36}
