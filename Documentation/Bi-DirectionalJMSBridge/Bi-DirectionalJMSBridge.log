@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  31 JUL 2014 09:59
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  1 AUG 2014 13:23
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1034,7 +1034,7 @@ Package microtype Info: Character `029' is missing
 (microtype)             in font `T1/iwona/m/sc/14.4'.
 (microtype)             Ignoring protrusion settings for this character.
 
-<Diagrams/FlowchartPic.jpg, id=44, 1744.5175pt x 507.8975pt>
+<Diagrams/FlowchartPic.jpg, id=49, 1744.5175pt x 507.8975pt>
 File: Diagrams/FlowchartPic.jpg Graphic file (type jpg)
 
 <use Diagrams/FlowchartPic.jpg>
@@ -1076,25 +1076,32 @@ Package microtype Info: Character `029' is missing
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 6.80005pt on input line 128.
 [3] [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 275.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 290.
  [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 275.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 290.
  (./Bi-DirectionalJMSBridge.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 275.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 275.
-Package rerunfilecheck Info: File `Bi-DirectionalJMSBridge.out' has not changed
-.
-(rerunfilecheck)             Checksum: E75F78732438144484943AC87AE057A1;528.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 275.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 290.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 290.
+
+
+Package rerunfilecheck Warning: File `Bi-DirectionalJMSBridge.out' has changed.
+
+(rerunfilecheck)                Rerun to get outlines right
+(rerunfilecheck)                or use package `bookmark'.
+
+Package rerunfilecheck Info: Checksums for `Bi-DirectionalJMSBridge.out':
+(rerunfilecheck)             Before: 78B9503E6443EA1D78F5958488E913C0;574
+(rerunfilecheck)             After:  9A6232ABF49995A062EBEF0950001045;574.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 290.
  ) 
 Here is how much of TeX's memory you used:
- 15138 strings out of 493307
- 228356 string characters out of 6139905
- 617727 words of memory out of 5000000
- 18128 multiletter control sequences out of 15000+600000
+ 15149 strings out of 493307
+ 228486 string characters out of 6139905
+ 612727 words of memory out of 5000000
+ 18136 multiletter control sequences out of 15000+600000
  80365 words of font info for 88 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 61i,9n,58p,742b,1898s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 61i,9n,58p,742b,1864s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/iwona/ec-iwona.enc}{/usr/share
 /texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-dist/
 fonts/enc/dvips/iwona/ec-iwona-sc.enc}</usr/share/texlive/texmf-dist/fonts/type
@@ -1105,10 +1112,10 @@ r/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/share/tex
 live/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/share/texlive/texmf-
 dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/fonts/t
 ype1/urw/palatino/uplr8a.pfb>
-Output written on Bi-DirectionalJMSBridge.pdf (5 pages, 192187 bytes).
+Output written on Bi-DirectionalJMSBridge.pdf (5 pages, 193234 bytes).
 PDF statistics:
- 303 PDF objects out of 1000 (max. 8388607)
- 284 compressed objects within 3 object streams
- 173 named destinations out of 1000 (max. 500000)
- 17478 words of extra memory for PDF output out of 20736 (max. 10000000)
+ 313 PDF objects out of 1000 (max. 8388607)
+ 294 compressed objects within 3 object streams
+ 176 named destinations out of 1000 (max. 500000)
+ 17486 words of extra memory for PDF output out of 20736 (max. 10000000)
 

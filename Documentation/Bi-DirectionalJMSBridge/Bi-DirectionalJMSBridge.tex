@@ -40,7 +40,7 @@ BCOR5mm, % Binding correction
 %----------------------------------------------------------------------------------------
  
 \section*{Abstract}
-This article details the steps involved in creating a bi-directional message bridge between two applications using JMS and HornetQ. For this implementation I used Wildfly as my Java application server but you could use Glassfish or simalar and the implementation would be near identical. Additionally, I assume that the reader of this article has prior knowledge of Java EE 7, EJB, RESTful web services, ActiveMQ and Wildfly application servers.
+This article details the steps involved in creating a bi-directional message bridge between two applications using JMS and HornetQ. For this implementation I used Wildfly as my Java application server but you could use Glassfish or simalar and the implementation would be near identical. Additionally, I assume that the reader of this article has prior knowledge of Java EE 7, EJB, RESTful web services, ActiveMQ and Wildfly application servers. If help is needed setting up any of these items please see the reference section.
 
 
  %------------------------------------------------
@@ -184,6 +184,8 @@ This is quite straightforward code which simply puts the message into the Queue.
 %------------------------------------------------
 
 \subsection{\textbf{Outgoing Side (Producer)}}
+
+
 \lstsetjava
 \begin{lstlisting}[language=Java]
 try {
@@ -270,6 +272,19 @@ try {
 
 \paragraph{}
 This is not a listener like the JVM side was. This will timeout after 1 second although if more time than that is required then something has gone wrong. Be sure to check the ActiveMQ console for message status.
+
+
+%------------------------------------------------
+
+\section{Reference}
+
+%------------------------------------------------
+
+\begin{enumerate}
+\item\href{http://blog.c2b2.co.uk/2014/01/connecting-jboss-wildfly-7-to-activemq.html}{''Connecting jboss to ActiveMQ''}
+\item\href{file:standalone-full.xml}{Example wildfly standalone file}
+\end{enumerate}
+
 
 
 \end{document}
