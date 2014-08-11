@@ -1,0 +1,90 @@
+\documentclass[
+10pt, % Main document font size
+letterpaper, % Paper type, use 'letterpaper' for US Letter paper
+oneside, % One page layout (no page indentation)
+%twoside, % Two page layout (page indentation for binding and different headers)
+headinclude,footinclude, % Extra spacing for the header and footer
+BCOR5mm, % Binding correction
+]{scrartcl}
+
+
+\usepackage{mike}
+
+%----------------------------------------------------------------------------------------
+%	TITLE AND AUTHOR(S)
+%----------------------------------------------------------------------------------------
+
+\title{\normalfont\spacedallcaps{Documentation Template}} % The article title
+
+\author{\spacedlowsmallcaps{Michael Meding* , mmeding@outsmartinc.com}} % The article author(s) - author affiliations need to be specified in the AUTHOR AFFILIATIONS block
+
+\date{} % An optional date to appear under the author(s)
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\maketitle % Print the title and abstract box
+
+\setcounter{tocdepth}{2} % Set the depth of the table of contents to show sections and subsections only
+
+\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+ 
+\section*{Abstract}
+Abstract text
+ 
+
+%------------------------------------------------
+
+\section{Section1}
+
+%------------------------------------------------
+
+\subsection{subsection1}
+
+%------------------------------------------------
+
+\paragraph{XML}~
+%Code Snippet
+\lstsetxml % bring in xml highlight settings
+\begin{lstlisting}[language=XML]
+<coolstory name="fancy xml">
+	<bro> broski </bro>
+</coolstory>
+\end{lstlisting}
+
+\paragraph{JSON}~
+%Some Cool JSON
+\lstsetjson
+\begin{lstlisting}[language=json]
+{"deviceTagId"="1398368055262","displayId"="1398368055263","name"="device_tags","locationId"="750","deviceTag" "id"="1398368055263"}
+\end{lstlisting}
+
+
+%------------------------------------------------
+
+\section{Section2}
+
+%------------------------------------------------
+
+\subsection{subsection2}
+
+%------------------------------------------------
+
+\paragraph{JAVA}~
+%Code Snippet
+\lstsetjava % brings in the java code highlight parameters
+\begin{lstlisting}[language=Java]
+// some java code here
+public class JavaAwesome{
+	private static String WOW = "MUCH JAVA";
+}
+\end{lstlisting}
+
+\end{document}
