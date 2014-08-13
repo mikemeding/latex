@@ -110,7 +110,7 @@ curl -v -H "Accept: application/json" -H "Content-Type: application/json"
 BASE-URL/auth/loginAsMember
 
 %Explanation
-\paragraph{Explanation} This method is the heart of AuthServie and allows the given user to login. Customer, username and password fields must match with a corresponding record in the database. Upon sucessful login a cookie named OSESSIONID is given back as a part of the response header and must be included with all other service calls. This cookie with its corresponding hash changes after each service call and is used in tracking the session and permissions of the user. If this cookie expires, or 15 minutes of server time elapses, then the session becomes invalidated and the user will no longer be able to make service calls without logging in again.
+\paragraph{Explanation} This method is the heart of AuthServie and allows the given user to login. Customer, username and password fields must match with a corresponding record in the database. Upon successful login a cookie named OSESSIONID is given back as a part of the response header and must be included with all other service calls. This cookie with its corresponding hash changes after each service call and is used in tracking the session and permissions of the user. If this cookie expires, or 15 minutes of server time elapses, then the session becomes invalidated and the user will no longer be able to make service calls without logging in again.
 
 
 %------------------------------------------------
@@ -150,7 +150,7 @@ System.out.println("data: " + jo.toString());
 BASE-URL/LocationManagement/getAllLocations
 
 %Explanation
-\paragraph{Explanation} The JSONString in the above output contains all the relevant information stored in an array called ''data''. Additionaly the code snippet above was written as a part of a JUnit test that included a sample login that would yeald this data. All methods from here will assume a valid login and session cookie have been issued before the method was called. This particular method returns a list of all valid locations for a given customer (the one you are logged in as) and includes all relevant information for that location. 
+\paragraph{Explanation} The JSONString in the above output contains all the relevant information stored in an array called ''data''. Additionally the code snippet above was written as a part of a JUnit test that included a sample login that would yield this data. All methods from here will assume a valid login and session cookie have been issued before the method was called. This particular method returns a list of all valid locations for a given customer (the one you are logged in as) and includes all relevant information for that location. 
 
 
 %------------------------------------------------
@@ -191,7 +191,7 @@ JSONObject jo = DefaultJSONFactory.getInstance()
 BASE-URL/LocationManagement/getLoadDetails
 
 %Explanation
-\paragraph{Explanation} In the code snippet above I included a DTO which is a ``Data Transfer Object''. This object when passed as an Entity in the request gets serialized and transfered as a JSONObject to the REST call. When recieved in the REST service the object is reconstructed and used as a plain old java object (POJO). This method call given the correct parameters (as DTO or JSON argument) will return the current load data of then given measurementPointId.
+\paragraph{Explanation} In the code snippet above I included a DTO which is a ``Data Transfer Object''. This object when passed as an Entity in the request gets serialized and transfered as a JSONObject to the REST call. When received in the REST service the object is reconstructed and used as a plain old java object (POJO). This method call given the correct parameters (as DTO or JSON argument) will return the current load data of then given measurementPointId.
 
 
 %------------------------------------------------
@@ -553,7 +553,7 @@ JSONArray array = jo.getJSONArray("data");
 BASE-URL/EnergyManagement/fetchUseData
 
 %Explanation
-\paragraph{Explanation} Repetative yet? This method returns the use data for the rootTagId in a given time range.
+\paragraph{Explanation} Repetitive yet? This method returns the use data for the rootTagId in a given time range.
 
 %------------------------------------------------
 

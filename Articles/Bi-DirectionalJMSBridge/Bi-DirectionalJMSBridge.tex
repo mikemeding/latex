@@ -114,7 +114,7 @@ As shown by the diagram above HornetQ and bridge definitions are contained in wi
 \end{lstlisting}
 
 \paragraph{standalone-full.xml} ~\newline\newline
-This file is the standard configuration file of the Wildfly application server. For this to work properly you must add the HornetQ module to Wildfly before modifying the standalone-full.xml. Instructions to do this can be found easly online. The modifications that must be added for a bi-directional bridge are detailed below. The names given are arbitrary and can be whatever you would like. Throughout this article I follow a pattern of names using source as my origin and target as the endpoint. I would advise following a simalar pattern as it begins to get confusing when trying to detirmine the path of a message. Also keep in mind that the names in jms-destinations must match those in jms-bridge.\newline
+This file is the standard configuration file of the Wildfly application server. For this to work properly you must add the HornetQ module to Wildfly before modifying the standalone-full.xml. Instructions to do this can be found easily on-line. The modifications that must be added for a bi-directional bridge are detailed below. The names given are arbitrary and can be whatever you would like. Throughout this article I follow a pattern of names using source as my origin and target as the endpoint. I would advise following a similar pattern as it begins to get confusing when trying to determine the path of a message. Also keep in mind that the names in jms-destinations must match those in jms-bridge.\newline
 
 %------------------------------------------------
 
@@ -226,7 +226,7 @@ try {
 \end{lstlisting}
 
 \paragraph{}
-The pattern for both the producer and consumer are quite simalar. Once you have a handle on the queue you just push or pull a message from it.
+The pattern for both the producer and consumer are quite similar. Once you have a handle on the queue you just push or pull a message from it.
 
 \subsection{\textbf{Incomming Side (Consumer)}}
 \lstsetjava
