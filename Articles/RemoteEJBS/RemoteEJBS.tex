@@ -198,7 +198,7 @@ This is the name of the bean for which you are doing the lookup. The bean name i
 This is the fully qualified class name of the interface for which you are doing the lookup. The interface should be one of the remote interfaces exposed by the bean on the server. The fully qualified class name part cannot be an empty string in the JNDI name.
 \end{description}
 
-\paragraph{\textbf{NOTE:}} One useful way to find the lookup name of an EJB is to look at the wildfly logs upon startup. There will be a block that describes all discovered EJB's.
+\paragraph{\textbf{NOTE:}} One useful way to find the lookup name of an EJB is to look at the wildfly logs upon startup. There will be a block that describes all discovered \textbf{LOCAL} EJB's. To get the remote equivalent you need to change the java: prefix to ejb:. Also note that if you have your EJB's deployed inside of an EAR (Enterprise Archive) then you must append the name of the ear before the name of your EJB in the lookup string. The syntax for a remote call inside of an ear would then roughly follow the pattern: \textbf{ejb:<ear-name>/<ejb-name>/<class-syntax(as above)>}.
 
 %------------------------------------------------
 
