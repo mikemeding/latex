@@ -232,7 +232,7 @@
 \newcommand{\lstsetxml}{
  \lstset{language=XML,
         breaklines=true,
-        commentstyle=\sffamily\color{dkgreen},
+        commentstyle=\color{OliveGreen},
         identifierstyle=\color{blue},
         keywordstyle=\bfseries\color{cyan},
         basicstyle=\footnotesize\sffamily,
@@ -249,8 +249,8 @@
  {
    basicstyle=\ttfamily\color{blue},
    morestring=[s]{"}{"},
-   morecomment=[s]{!--}{--},
-   morekeywords={xmlns,version,type,name}% list your attributes here       
+   morecomment=[s]{<!--}{-->},
+   morekeywords={xmlns,version,type,name,value,connector-ref,security-realm,worker,username,protocol,outbound-socket-binding-ref}% list your attributes here       
  } 
 
 %--------------------------------------------CSHARP-----------------------------------------------------
