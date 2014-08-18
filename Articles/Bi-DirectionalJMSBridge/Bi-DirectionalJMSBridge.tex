@@ -49,7 +49,17 @@ This article details the steps involved in creating a bi-directional message bri
 
 %------------------------------------------------
 
-\includegraphics[width=11.75cm]{FlowchartPic} % FLOWCHART
+
+~\newline
+
+\begin{figure}[h]
+\centering
+\includegraphics[width=15.5cm]{FlowchartPic} % FLOWCHART
+\caption{Two message bridges that provide bidirectional flow of data between the two applications }
+\label{fig:servers}
+\end{figure}
+
+
 \paragraph{}~\newline
 As shown by the diagram above HornetQ and bridge definitions are contained in wildfly configuration. The orion application simply includes two classes to communicate back and forth across the two bridges. Messages are managed by ActiveMQ. ActiveMQ is included as an additional module to wildfly and can be accessed by a web console at localhost:61616 when deployed with default settings.
 
