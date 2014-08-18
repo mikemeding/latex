@@ -54,7 +54,7 @@ This article details a ground up intro to setting up a remote EJB and invoking a
 
 %------------------------------------------------
 
-\section{Setting Up Wildfly}
+\section{Setting Up Wildfly standalone-full.xml}
 
 %------------------------------------------------
 
@@ -198,7 +198,7 @@ This is the name of the bean for which you are doing the lookup. The bean name i
 This is the fully qualified class name of the interface for which you are doing the lookup. The interface should be one of the remote interfaces exposed by the bean on the server. The fully qualified class name part cannot be an empty string in the JNDI name.
 \end{description}
 
-\paragraph{\textbf{NOTE:}} One useful way to find the lookup name of an EJB is to look at the wildfly logs upon startup. There will be a block that describes all discovered \textbf{LOCAL} EJB's. To get the remote equivalent you need to change the java: prefix to ejb:. Also note that if you have your EJB's deployed inside of an EAR (Enterprise Archive) then you must append the name of the ear before the name of your EJB in the lookup string. The syntax for a remote call inside of an ear would then roughly follow the pattern: \textbf{ejb:<ear-name>/<ejb-name>/<class-syntax(as above)>}.
+\paragraph{\textbf{NOTE:}} One useful way to find the lookup name of an EJB is to look at the wildfly logs upon startup. There will be a block that describes all discovered \textbf{LOCAL} EJB's. To get the remote equivalent you need to change the java: prefix to ejb: so long as you have the same deployment on both your local and remote. Also note that if you have your EJB's deployed inside of an EAR (Enterprise Archive) then you must append the name of the ear before the name of your EJB in the lookup string. The syntax for a remote call inside of an ear would then roughly follow the pattern: \textbf{ejb:<ear-name>/<ejb-name>/<class-syntax(as above)>}.
 
 %------------------------------------------------
 
@@ -251,7 +251,7 @@ This is the fully qualified class name of the interface for which you are doing 
 </interfaces>
 \end{lstlisting}
  
-\paragraph{} The only modification that you need to make to the standalone.xml file of your slave side deployment server is to change all occurances of the localhost bind address (127.0.0.1) to (0.0.0.0). This is great because it makes it super easy to deploy code on new servers.
+\paragraph{} The only modification that you need to make to the standalone.xml file from a base setup is to change all occurrences of the localhost bind address (127.0.0.1) to (0.0.0.0). This is great because it makes it super easy to deploy code on new servers.
 
 %------------------------------------------------
 

@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  15 AUG 2014 16:37
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  18 AUG 2014 10:01
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1031,12 +1031,12 @@ Underfull \hbox (badness 10000) in paragraph at lines 44--45
 
  []
 
-<Diagrams/EJBDiagram.jpg, id=59, 1076.02pt x 201.75375pt>
+<Diagrams/EJBDiagram.jpg, id=59, 898.35625pt x 201.75375pt>
 File: Diagrams/EJBDiagram.jpg Graphic file (type jpg)
 
 <use Diagrams/EJBDiagram.jpg>
 Package pdftex.def Info: Diagrams/EJBDiagram.jpg used on input line 48.
-(pdftex.def)             Requested size: 441.01772pt x 82.69186pt.
+(pdftex.def)             Requested size: 441.01772pt x 99.0449pt.
 
 Overfull \hbox (6.01772pt too wide) in paragraph at lines 48--49
  [][] 
@@ -1096,13 +1096,13 @@ Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
 Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
 Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
 Package rerunfilecheck Info: File `RemoteEJBS.out' has not changed.
-(rerunfilecheck)             Checksum: 9C85DB3F0691DD542ACE9F5F6610BCAD;724.
+(rerunfilecheck)             Checksum: 47B37EF97C51E947B430A402ABF1FC73;744.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
  ) 
 Here is how much of TeX's memory you used:
  15055 strings out of 493307
  226899 string characters out of 6139905
- 574702 words of memory out of 5000000
+ 571702 words of memory out of 5000000
  18131 multiletter control sequences out of 15000+600000
  90115 words of font info for 92 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
@@ -1116,7 +1116,7 @@ st/fonts/enc/dvips/iwona/ec-iwona.enc}</usr/share/texlive/texmf-dist/fonts/type
 texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/share/texlive/tex
 mf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/font
 s/type1/urw/palatino/uplr8a.pfb>
-Output written on RemoteEJBS.pdf (5 pages, 201498 bytes).
+Output written on RemoteEJBS.pdf (5 pages, 201216 bytes).
 PDF statistics:
  207 PDF objects out of 1000 (max. 8388607)
  190 compressed objects within 2 object streams
