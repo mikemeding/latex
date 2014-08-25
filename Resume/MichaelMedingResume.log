@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  11 AUG 2014 13:42
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  25 AUG 2014 14:36
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -73,18 +73,18 @@ Package: ifxetex 2010/09/12 v0.6 Provides ifxetex conditional
 (./MichaelMedingResume.aux)
 \openout1 = `MichaelMedingResume.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 32.
-LaTeX Font Info:    ... okay on input line 32.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 13.
+LaTeX Font Info:    ... okay on input line 13.
 
 *geometry* driver: auto-detecting
 *geometry* detected driver: pdftex
@@ -121,14 +121,19 @@ LaTeX Font Info:    ... okay on input line 32.
 * (1in=72.27pt=25.4mm, 1cm=28.453pt)
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 32.
+(Font)              <10.95> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 32.
+(Font)              <8> on input line 13.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 32.
+(Font)              <6> on input line 13.
 
-Overfull \hbox (30.0pt too wide) in paragraph at lines 32--32
+Overfull \hbox (30.0pt too wide) in paragraph at lines 13--13
 [] 
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 21--26
+
  []
 
 [1
@@ -138,20 +143,21 @@ Overfull \hbox (30.0pt too wide) in paragraph at lines 32--32
 Here is how much of TeX's memory you used:
  872 strings out of 493307
  11839 string characters out of 6139905
- 73348 words of memory out of 5000000
+ 72330 words of memory out of 5000000
  4372 multiletter control sequences out of 15000+600000
  7639 words of font info for 27 fonts, out of 8000000 for 9000
  957 hyphenation exceptions out of 8191
- 27i,6n,21p,188b,150s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,9n,21p,270b,182s stack positions out of 5000i,500n,10000p,200000b,80000s
 </usr/share/texlive/texmf-dist/fonts/type1/public/
 amsfonts/cm/cmbx10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfon
 ts/cm/cmbx12.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/
-cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.
-pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
-Output written on MichaelMedingResume.pdf (1 page, 73488 bytes).
+cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr8.pf
+b></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmsy10.pfb></us
+r/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmti10.pfb>
+Output written on MichaelMedingResume.pdf (1 page, 80431 bytes).
 PDF statistics:
- 28 PDF objects out of 1000 (max. 8388607)
- 19 compressed objects within 1 object stream
+ 32 PDF objects out of 1000 (max. 8388607)
+ 22 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
  1 words of extra memory for PDF output out of 10000 (max. 10000000)
 
