@@ -1,15 +1,17 @@
 \contentsline {section}{\numberline {1}Overview}{1}{section.1}
-\contentsline {paragraph}{}{2}{figure.caption.1}
+\contentsline {paragraph}{}{2}{figure.caption.2}
 \contentsline {section}{\numberline {2}Setup Wildfly Application Server}{2}{section.2}
 \contentsline {paragraph}{standalone-full.xml}{3}{lstnumber.-1.49}
-\contentsline {section}{\numberline {3}JVM Code}{3}{section.3}
-\contentsline {subsection}{\numberline {3.1}\textbf {Incomming Side (To JVM)}}{3}{subsection.3.1}
-\contentsline {paragraph}{}{3}{lstnumber.-2.20}
-\contentsline {subsection}{\numberline {3.2}\textbf {Outgoing Side (From JVM)}}{3}{subsection.3.2}
-\contentsline {paragraph}{}{4}{lstnumber.-3.14}
-\contentsline {section}{\numberline {4}Application Code}{4}{section.4}
-\contentsline {subsection}{\numberline {4.1}\textbf {Outgoing Side (Producer)}}{4}{subsection.4.1}
-\contentsline {paragraph}{}{4}{lstnumber.-4.35}
-\contentsline {subsection}{\numberline {4.2}\textbf {Incomming Side (Consumer)}}{4}{subsection.4.2}
-\contentsline {paragraph}{}{5}{lstnumber.-5.36}
-\contentsline {section}{\numberline {5}Reference}{5}{section.5}
+\contentsline {section}{\numberline {3}Setup Remote Wildfly Application Server}{4}{section.3}
+\contentsline {paragraph}{standalone-full.xml}{4}{lstnumber.-2.18}
+\contentsline {section}{\numberline {4}JVM Code}{4}{section.4}
+\contentsline {subsection}{\numberline {4.1}\textbf {Incomming Side (To JVM)}}{4}{subsection.4.1}
+\contentsline {paragraph}{}{5}{lstnumber.-3.20}
+\contentsline {subsection}{\numberline {4.2}\textbf {Outgoing Side (From JVM)}}{5}{subsection.4.2}
+\contentsline {paragraph}{}{5}{lstnumber.-4.14}
+\contentsline {section}{\numberline {5}Application Code}{5}{section.5}
+\contentsline {subsection}{\numberline {5.1}\textbf {Outgoing Side (Producer)}}{5}{subsection.5.1}
+\contentsline {paragraph}{}{6}{lstnumber.-5.35}
+\contentsline {subsection}{\numberline {5.2}\textbf {Incomming Side (Consumer)}}{6}{subsection.5.2}
+\contentsline {paragraph}{}{6}{lstnumber.-6.36}
+\contentsline {section}{\numberline {6}Reference}{6}{section.6}

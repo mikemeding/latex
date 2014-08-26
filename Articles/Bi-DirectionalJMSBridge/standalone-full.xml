@@ -52,6 +52,11 @@
                     <properties path="application-roles.properties" relative-to="jboss.server.config.dir"/>
                 </authorization>
             </security-realm>
+            <security-realm name="ejb-security-realm">
+                <server-identities>
+                    <secret value="Y2NhZXMx"/>
+                </server-identities>
+            </security-realm>
         </security-realms>
         <audit-log>
             <formatters>
@@ -195,6 +200,7 @@
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:deployment-scanner:2.0">
             <deployment-scanner path="deployments" relative-to="jboss.server.base.dir" scan-interval="5000"/>
+            <deployment-scanner name="scan-eos" path="/home/mike/project/oss/eos/target" scan-interval="5000"/>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:ee:2.0">
             <spec-descriptor-property-replacement>false</spec-descriptor-property-replacement>
@@ -405,14 +411,9 @@
                 </jms-connection-factories>
 
                 <jms-destinations>
-                    <jms-queue name="JMSBridgeSourceQueue">
-                        <entry name="java:/queue/JMSBridgeSourceQ"/>
-                        <entry name="java:jboss/exported/jms/queue/JMSBridgeSourceQ"/>
-                        <durable>true</durable>
-                    </jms-queue>
-                    <jms-queue name="AMQTargetQ">
-                        <entry name="java:/queue/AMQTargetQ"/>
-                        <entry name="java:jboss/exported/jms/queue/AMQTargetQ"/>
+                    <jms-queue name="BackupSourceQueue">
+                        <entry name="java:/queue/BackupSourceQ"/>
+                        <entry name="java:jboss/exported/jms/queue/BackupSourceQ"/>
                         <durable>true</durable>
                     </jms-queue>
                 </jms-destinations>
@@ -420,11 +421,11 @@
             <jms-bridge name="to-active-mq">
                 <source>
                     <connection-factory name="ConnectionFactory"/>
-                    <destination name="queue/JMSBridgeSourceQ"/>
+                    <destination name="queue/BackupSourceQ"/>
                 </source>
                 <target>
                     <connection-factory name="AMQConnectionFactory"/>
-                    <destination name="queue/JMSBridgeTargetQ"/>
+                    <destination name="queue/BackupSourceQ"/>
                 </target>
                 <quality-of-service>AT_MOST_ONCE</quality-of-service>
                 <failure-retry-interval>1000</failure-retry-interval>
@@ -432,38 +433,32 @@
                 <max-batch-size>10</max-batch-size>
                 <max-batch-time>100</max-batch-time>
             </jms-bridge>
-            <jms-bridge name="from-active-mq">
-                <source>
-                    <connection-factory name="AMQConnectionFactory"/>
-                    <destination name="queue/AMQSourceQ"/>
-                </source>
-                <target>
-                    <connection-factory name="ConnectionFactory"/>
-                    <destination name="queue/AMQTargetQ"/>
-                </target>
-                <quality-of-service>AT_MOST_ONCE</quality-of-service>
-                <failure-retry-interval>1000</failure-retry-interval>
-                <max-retries>-1</max-retries>
-                <max-batch-size>10</max-batch-size>
-                <max-batch-time>100</max-batch-time>
-            </jms-bridge>
-</subsystem>
+        </subsystem>
         <subsystem xmlns="urn:jboss:domain:naming:2.0">
             <bindings>
-                <simple name="java:global/os/orion/IOR" value="IOR:000000000000002449444c3a6f732f6f72696f6e2f636f7262612f494f72696f6e5365727665723a312e3000000000010000000000000092000102000000000f3139322e3136382e31392e31383200004eff00000000003cafabcb00000000220000000100000001000000000000000200000008526f6f74504f410000000006656e7472790000000000000773657373696f6e14000000020000000100000020000000000001000100000002050100010001002000010109000000010001010000000026000000020002" type="java.lang.String"/>
+                <simple name="java:global/os/ops/as-ior" value="IOR:000000000000002449444c3a6f732f6f72696f6e2f636f7262612f494f72696f6e5365727665723a312e3000000000010000000000000092000102000000000f3139322e3136382e31392e31383200004eff00000000003cafabcb00000000220000000100000001000000000000000200000008526f6f74504f410000000006656e7472790000000000000773657373696f6e14000000020000000100000020000000000001000100000002050100010001002000010109000000010001010000000026000000020002" type="java.lang.String"/>
                 <simple name="java:global/os/installmate/mode" value="elr" type="java.lang.String"/>
                 <simple name="java:global/os/installmate/serialDevice" value="/dev/ttyUSB0" type="java.lang.String"/>
                 <simple name="java:global/os/installmate/path" value="/home/mike/project/installmate/data" type="java.lang.String"/>
-                <simple name="java:global/os/installmate/services" value="ejb:/im-rest-1.0/InstallManagerImpl!os.installmate.common.InstallManager" type="java.lang.String"/>
                 <simple name="java:global/os/app/uuid" value="c9db031c-b3ea-4dbc-95f4-c5a15417cbbe" type="java.lang.String"/>
                 <simple name="java:global/os/hive/properties" value="/usr/apps/etc/hive.properties" type="java.lang.String"/>
                 <simple name="java:global/os/mfg/data" value="/home/mike/project/oss/mfg/json" type="java.lang.String"/>
+                <simple name="java:global/os/acq/dist-ear" value="ejb:acq-distribution-ear-1.0/acq-distribution-ejb-1.0/DistributionImpl!os.oss.dist.Distribution" type="java.lang.String"/>
+                <simple name="java:global/os/acq/queue-ear" value="ejb:acq-distribution-ear-1.0/acq-distribution-ejb-1.0/QueuesImpl!os.oss.jms.Queues" type="java.lang.String"/>
             </bindings>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:pojo:1.0"/>
         <subsystem xmlns="urn:jboss:domain:remoting:2.0">
             <endpoint worker="default"/>
             <http-connector name="http-remoting-connector" connector-ref="default" security-realm="ApplicationRealm"/>
+            <outbound-connections>
+                <remote-outbound-connection name="remote-mallorca-connection" outbound-socket-binding-ref="remote-mallorca" username="uwe" security-realm="ejb-security-realm" protocol="http-remoting">
+                    <properties>
+                        <property name="SASL_POLICY_NOANONYMOUS" value="false"/>
+                        <property name="SSL_ENABLED" value="false"/>
+                    </properties>
+                </remote-outbound-connection>
+            </outbound-connections>
         </subsystem>
         <subsystem xmlns="urn:jboss:domain:resource-adapters:2.0">
             <resource-adapters>
@@ -477,14 +472,9 @@
                         <connection-definition class-name="org.apache.activemq.ra.ActiveMQManagedConnectionFactory" jndi-name="java:/AMQConnectionFactory" enabled="true" use-java-context="true" pool-name="AMQConnectionFactory"/>
                     </connection-definitions>
                     <admin-objects>
-                        <admin-object class-name="org.apache.activemq.command.ActiveMQQueue" jndi-name="queue/JMSBridgeTargetQ" use-java-context="true" pool-name="target_queue">
+                        <admin-object class-name="org.apache.activemq.command.ActiveMQQueue" jndi-name="queue/BackupSourceQ" use-java-context="true" pool-name="target_queue">
                             <config-property name="PhysicalName">
-                                JMSBridgeTargetQ
-                            </config-property>
-                        </admin-object>
-                        <admin-object class-name="org.apache.activemq.command.ActiveMQQueue" jndi-name="queue/AMQSourceQ" use-java-context="true" pool-name="source_queue">
-                            <config-property name="PhysicalName">
-                                AMQSourceQ
+                                BackupSourceQueue
                             </config-property>
                         </admin-object>
                     </admin-objects>
@@ -513,6 +503,17 @@
                     <authorization>
                         <policy-module code="Delegating" flag="required"/>
                     </authorization>
+                </security-domain>
+                <security-domain name="oss-security-domain" cache-type="default">
+                    <authentication>
+                        <login-module code="Database" flag="required">
+                            <module-option name="dsJndiName" value="java:/jdbc/ops"/>
+                            <module-option name="principalsQuery" value="SELECT password FROM ops_users WHERE username=? and active=1"/>
+                            <module-option name="rolesQuery" value="SELECT groupname,'Roles' FROM ops_user_groups WHERE username=?"/>
+                            <module-option name="hashAlgorithm" value="SHA-512"/>
+                            <module-option name="hashEncoding" value="hex"/>
+                        </login-module>
+                    </authentication>
                 </security-domain>
             </security-domains>
         </subsystem>
@@ -584,11 +585,14 @@
         <outbound-socket-binding name="mail-smtp">
             <remote-destination host="localhost" port="25"/>
         </outbound-socket-binding>
+        <outbound-socket-binding name="remote-mallorca">
+            <remote-destination host="10.0.0.154" port="8080"/>
+        </outbound-socket-binding>
     </socket-binding-group>
 
     <deployments>
-        <deployment name="scorpio-rest-1.0.war" runtime-name="scorpio-rest-1.0.war">
-            <content sha1="0c78aaf3c21932a8b4709a5df8d1d6ef4a0896c8"/>
+        <deployment name="acq-distribution-ear-1.0.ear" runtime-name="acq-distribution-ear-1.0.ear">
+            <content sha1="d60b3c8b3aeaf3ec139251e51b6a4ac049e05a16"/>
         </deployment>
     </deployments>
 </server>
