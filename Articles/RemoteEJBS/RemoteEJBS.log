@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.6.30)  27 AUG 2014 10:23
+This is pdfTeX, Version 3.1415926-2.5-1.40.14 (TeX Live 2013/Debian) (format=pdflatex 2014.4.15)  5 SEP 2014 08:52
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1072,54 +1072,285 @@ LaTeX Font Info:    Font shape `T1/fvm/b/n' will be
  [2]
 LaTeX Font Info:    Font shape `T1/fvm/m/n' will be
 (Font)              scaled to size 6.80005pt on input line 151.
- [3]
-LaTeX Font Info:    Font shape `T1/iwona/bx/sc' in size <10> not available
-(Font)              Font shape `T1/iwona/b/sc' tried instead on input line 183.
 
+Overfull \hbox (25.27814pt too wide) in paragraph at lines 156--162
+\T1/fvm/m/n/10 annotation allows to manage what implementation we want to use. 
+The Wildfly EJB container
+ []
 
-Overfull \hbox (13.61003pt too wide) in paragraph at lines 183--186
-\T1/pplj/b/n/10 ejb:<app-name>/<module-name>/<distinct-name>/<bean-name>!<fully
--qualified-classname-
+[3]
+Overfull \hbox (7.43097pt too wide) in paragraph at lines 182--189
+[] [][] \T1/fvm/m/n/10 We are using JNDI to resolve the EJB reference. The ebj-
+ref-name refers to the name
  []
 
 
-Overfull \hbox (13.61003pt too wide) in paragraph at lines 186--189
-\T1/pplj/b/n/10 ejb:<app-name>/<module-name>/<distinct-name>/<bean-name>!<fully
--qualified-classname-
+Overfull \hbox (15.04407pt too wide) in paragraph at lines 182--189
+\T1/fvm/m/n/10 we gave to the EJB reference in the Java code and instructs the 
+Wildfly EJB container to
+ []
+
+
+Overfull \hbox (25.53314pt too wide) in paragraph at lines 182--189
+\T1/fvm/m/n/10 perform a lookup with the URL. If the class is found, the Wildfl
+y dependency injector will
+ []
+
+
+Overfull \hbox (5.065pt too wide) in paragraph at lines 182--189
+\T1/fvm/m/n/10 insert an instance to the remote Java code. The EJB naming and J
+NDI lookup is a quite
+ []
+
+
+Overfull \hbox (10.18204pt too wide) in paragraph at lines 182--189
+\T1/fvm/m/n/10 powerful and flexible way to manage access to remote EJB's. The 
+URL syntax is composed
+ []
+
+LaTeX Font Info:    Font shape `T1/iwona/bx/sc' in size <10> not available
+(Font)              Font shape `T1/iwona/b/sc' tried instead on input line 191.
+
+
+Overfull \hbox (141.6198pt too wide) in paragraph at lines 191--194
+\T1/fvm/b/n/10 ejb:<app-name>/<module-name>/<distinct-name>/<bean-name>!<fully-
+qualified-classname-of-the-remote-interface> 
+ []
+
+
+Overfull \hbox (188.69312pt too wide) in paragraph at lines 194--197
+\T1/fvm/b/n/10 ejb:<app-name>/<module-name>/<distinct-name>/<bean-name>!<fully-
+qualified-classname-of-the-remote-interface>?stateful 
+ []
+
+
+Overfull \hbox (19.57596pt too wide) in paragraph at lines 197--199
+\T1/fvm/m/n/10 This is the name of the .ear (without the .ear suffix) that you 
+have deployed on the
+ []
+
+
+Overfull \hbox (19.57596pt too wide) in paragraph at lines 199--201
+\T1/fvm/m/n/10 This is the name of the .jar (without the .jar suffix) that you 
+have deployed on the
+ []
+
+
+Overfull \hbox (30.06503pt too wide) in paragraph at lines 199--201
+\T1/fvm/m/n/10 server and the contains your EJBs. If the EJBs are deployed in a
+ .war then the module
+ []
+
+
+Overfull \hbox (14.45892pt too wide) in paragraph at lines 201--203
+\T1/fvm/m/n/10 This is a WildFly-specific name which can be optionally assigned
+ to the deployments
+ []
+
+
+Overfull \hbox (9.5969pt too wide) in paragraph at lines 201--203
+\T1/fvm/m/n/10 that are deployed on the server. More about the purpose and usag
+e of this will be
+ []
+
+
+Overfull \hbox (1.92134pt too wide) in paragraph at lines 201--203
+\T1/fvm/m/n/10 explained in a separate chapter. If a deployment doesn't use dis
+tinct-name then,
+ []
+
+
+Overfull \hbox (9.34189pt too wide) in paragraph at lines 203--205
+\T1/fvm/m/n/10 This is the name of the bean for which you are doing the lookup.
+ The bean name is
+ []
+
+
+Overfull \hbox (50.53317pt too wide) in paragraph at lines 203--205
+\T1/fvm/m/n/10 typically the unqualified classname of the bean implementation c
+lass, but can be overriden
+ []
+
+
+Overfull \hbox (24.693pt too wide) in paragraph at lines 203--205
+\T1/fvm/m/n/10 through either ejb-jar.xml or via annotations. The bean name par
+t cannot be an empty
+ []
+
+
+Overfull \hbox (14.45892pt too wide) in paragraph at lines 205--207
+\T1/fvm/m/n/10 This is the fully qualified class name of the interface for whic
+h you are doing the
+ []
+
+
+Overfull \hbox (4.47986pt too wide) in paragraph at lines 205--207
+\T1/fvm/m/n/10 lookup. The interface should be one of the remote interfaces exp
+osed by the bean
+ []
+
+
+Overfull \hbox (19.83096pt too wide) in paragraph at lines 205--207
+\T1/fvm/m/n/10 on the server. The fully qualified class name part cannot be an 
+empty string in the
+ []
+
+
+Overfull \hbox (9.84573pt too wide) in paragraph at lines 209--210
+[] []\T1/iwona/bx/sc/10/80ls note:[] \T1/fvm/m/n/10 One useful way to find the 
+lookup name of an EJB is to look at the wildfly logs
+ []
+
+
+Overfull \hbox (10.18204pt too wide) in paragraph at lines 209--210
+\T1/fvm/m/n/10 upon startup. There will be a block that describes all discovere
+d \T1/fvm/b/n/10 LOCAL \T1/fvm/m/n/10 EJB's. To get
+ []
+
+
+Overfull \hbox (10.18204pt too wide) in paragraph at lines 209--210
+\T1/fvm/m/n/10 the remote equivalent you need to change the java: prefix to ejb
+: so long as you have
+ []
+
+
+Overfull \hbox (20.4161pt too wide) in paragraph at lines 209--210
+\T1/fvm/m/n/10 the same deployment on both your local and remote. Also note tha
+t if you have your EJB's
+ []
+
+
+Overfull \hbox (9.92703pt too wide) in paragraph at lines 209--210
+\T1/fvm/m/n/10 deployed inside of an EAR (Enterprise Archive) then you must app
+end the name of the ear
+ []
+
+
+Overfull \hbox (5.065pt too wide) in paragraph at lines 209--210
+\T1/fvm/m/n/10 before the name of your EJB in the lookup string. The syntax for
+ a remote call inside
+ []
+
+
+Overfull \hbox (35.76721pt too wide) in paragraph at lines 209--210
+\T1/fvm/m/n/10 of an ear would then roughly follow the pattern: \T1/fvm/b/n/10 
+ejb:<ear-name>/<ejb-name>/<class-syntax(as
  []
 
 [4]
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 266.
- [5]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 266.
+Overfull \hbox (39.67169pt too wide) in paragraph at lines 230--231
+[] [][] \T1/fvm/m/n/10 For this example we are trying to avoid tedious .propert
+ies files describing our endpoints.
+ []
+
+
+Overfull \hbox (37.05072pt too wide) in paragraph at lines 230--231
+\T1/fvm/m/n/10 This becomes difficult to maintain especially when you move a bu
+nch of EJB's to a new server.
+ []
+
+
+Overfull \hbox (15.29907pt too wide) in paragraph at lines 230--231
+\T1/fvm/m/n/10 So for this reason we just tell our web application that we migh
+t have some EJB's at the
+ []
+
+
+Overfull \hbox (5.065pt too wide) in paragraph at lines 230--231
+\T1/fvm/m/n/10 location described by remote-mallorca-connection in our standalo
+ne. This file belongs
+ []
+
+
+Overfull \hbox (27.89911pt too wide) in paragraph at lines 262--263
+[] [][] \T1/fvm/m/n/10 The only modification that you need to make to the stand
+alone.xml file from a base setup
+ []
+
+
+Overfull \hbox (25.53314pt too wide) in paragraph at lines 262--263
+\T1/fvm/m/n/10 is to change all occurrences of the localhost bind address (127.
+0.0.1) to (0.0.0.0). This
+ []
+
+
+Overfull \hbox (17.66504pt too wide) in paragraph at lines 271--272
+[] [][] \T1/fvm/m/n/10 The last thing that must be done on the slave server is 
+to add a user. Wildfly is set
+ []
+
+
+Overfull \hbox (5.065pt too wide) in paragraph at lines 271--272
+\T1/fvm/m/n/10 up to have 2 different types of users, Management Users and Appl
+ication Users. If you
+ []
+
+
+Overfull \hbox (25.02313pt too wide) in paragraph at lines 271--272
+\T1/fvm/m/n/10 wish to access the Wildfly web console then you must have a Mana
+gement User set up as your
+ []
+
+
+Overfull \hbox (5.065pt too wide) in paragraph at lines 271--272
+\T1/fvm/m/n/10 login. If you wish to access EJB's then you must have a Applicat
+ion User that matches
+ []
+
+
+Overfull \hbox (15.29907pt too wide) in paragraph at lines 271--272
+\T1/fvm/m/n/10 the user information that we put into the standalone-full.xml on
+ the master size. If no
+ []
+
+
+Overfull \hbox (15.04407pt too wide) in paragraph at lines 271--272
+\T1/fvm/m/n/10 Application User exists then you will receive an unauthorized ex
+ception in your log file
+ []
+
+
+Overfull \hbox (40.88425pt too wide) in paragraph at lines 271--272
+\T1/fvm/m/n/10 only, and perhaps a null pointer in your code. To set up a new W
+ildfly user you must execute
+ []
+
+
+Overfull \hbox (15.29907pt too wide) in paragraph at lines 271--272
+\T1/fvm/m/n/10 the add-user script in the bin folder of your Wildfly server and
+ follow the instructions
+ []
+
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 274.
+[5]
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 274.
  (./RemoteEJBS.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 266.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 266.
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 274.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 274.
 Package rerunfilecheck Info: File `RemoteEJBS.out' has not changed.
-(rerunfilecheck)             Checksum: 47B37EF97C51E947B430A402ABF1FC73;744.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 266.
+(rerunfilecheck)             Checksum: E97A186292E927072E29A302D45A73B8;751.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 274.
  ) 
 Here is how much of TeX's memory you used:
- 15055 strings out of 493307
- 226899 string characters out of 6139905
+ 15039 strings out of 493307
+ 226706 string characters out of 6139905
  571702 words of memory out of 5000000
- 18131 multiletter control sequences out of 15000+600000
- 90115 words of font info for 92 fonts, out of 8000000 for 9000
+ 18123 multiletter control sequences out of 15000+600000
+ 88659 words of font info for 89 fonts, out of 8000000 for 9000
  959 hyphenation exceptions out of 8191
- 61i,9n,58p,817b,1898s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texliv
-e/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{/usr/share/texlive/texmf-di
+ 61i,9n,58p,817b,1856s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/iwona/ec-iwona-sc.enc}{/usr/sh
+are/texlive/texmf-dist/fonts/enc/dvips/base/8r.enc}{/usr/share/texlive/texmf-di
 st/fonts/enc/dvips/iwona/ec-iwona.enc}</usr/share/texlive/texmf-dist/fonts/type
 1/public/fpl/fplrc8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera
 /fvmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/bera/fvmr8a.pfb><
 /usr/share/texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonab.pfb></usr/share/
 texlive/texmf-dist/fonts/type1/nowacki/iwona/iwonar.pfb></usr/share/texlive/tex
-mf-dist/fonts/type1/urw/palatino/uplb8a.pfb></usr/share/texlive/texmf-dist/font
-s/type1/urw/palatino/uplr8a.pfb>
-Output written on RemoteEJBS.pdf (5 pages, 201216 bytes).
+mf-dist/fonts/type1/urw/palatino/uplr8a.pfb>
+Output written on RemoteEJBS.pdf (5 pages, 186195 bytes).
 PDF statistics:
- 207 PDF objects out of 1000 (max. 8388607)
- 190 compressed objects within 2 object streams
- 83 named destinations out of 1000 (max. 500000)
+ 197 PDF objects out of 1000 (max. 8388607)
+ 181 compressed objects within 2 object streams
+ 78 named destinations out of 1000 (max. 500000)
  18526 words of extra memory for PDF output out of 20736 (max. 10000000)
 
