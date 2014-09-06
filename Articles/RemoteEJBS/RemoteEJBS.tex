@@ -149,36 +149,44 @@ This article details a ground up intro to setting up a remote EJB and invoking a
 %Code Snippet
 \lstsetjava % brings in the java code highlight parameters
 \begin{lstlisting}[language=Java]
-@EJB
+@EJB(name = "ejb/Distribution")
 Distribution dist;
 \end{lstlisting}
 
-\paragraph{} This tells us that we have an EJB and it is described by the Distribution class. However, this does not resolve where the code actually exists only that we have one.
+\paragraph{} This tells us that we have an EJB and it is described by
+the Distribution class. However, this does not resolve where the code
+actually exists only that we have one. The \tt{name} reference
+in the \tt{\@EJB} annotation allows to manage what implementation we
+want to use. The Wildfly EJB container will resolve this for us (next
+section). 
 
 %------------------------------------------------
 
-\subsection{@PostConstruct}
+\subsection{WEB-INF/jboss-web.xml}
 
 %------------------------------------------------
 
 \paragraph{JAVA}~
 %Code Snippet
-\lstsetjava % brings in the java code highlight parameters
-\begin{lstlisting}[language=Java]
-@PostConstruct
-private void init() {
-	try {
-		Properties props = new Properties();
-		props.put(javax.naming.Context.URL_PKG_PREFIXES, "org.jboss.ejb.client.naming");
-		javax.naming.Context context = new javax.naming.InitialContext(props);		
-		dist = (Distribution) context.lookup("ejb:/acq-distribution-ejb-1.0/DistributionImpl!os.oss.Distribution");
-	} catch (Exception e) {
-		log.severe(e.getMessage());
-	}
-}
+\lstsetxml % brings in the xml code highlight parameters
+\begin{lstlisting}[language=XML]
+<jboss-web>
+  <ejb-ref>
+    <ejb-ref-name>ejb/Distribution</ejb-ref-name>
+    <jndi-name>ejb:/webapp-ejb-1.0/DistributionImpl!some.package.webapp.ejb.Distribution</jndi-name>
+  </ejb-ref>
+</jboss-web>
 \end{lstlisting}
 
-\paragraph{} @PostConstruct applies the url properties and performs a remote EJB lookup. If the class is found it is executed on the remote. If the class is not found it is executed on the local machine and a message will be logged detailing the reason for a bad connection. As you can see the naming pattern for the .lookup is quite specific and follows a syntax as such,
+\paragraph{} 
+We are using JNDI to resolve the EJB reference. The
+\tt{ebj-ref-name} refers to the name we gave to the EJB reference in
+the Java code and instructs the Wildfly EJB container to perform a
+lookup with the URL. If the class is found, the Wildfly dependency
+injector will insert an instance to the remote Java code. The EJB
+naming and JNDI lookup is a quite powerful and flexible way to manage
+access to remote EJB's. The URL syntax is composed like this:
+
 \begin{description}
 \item[For stateless beans.] \hfill \\
 \textbf{
