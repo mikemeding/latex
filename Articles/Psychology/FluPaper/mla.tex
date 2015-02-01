@@ -1,0 +1,106 @@
+\documentclass[12pt]{article}
+
+%
+%Margin - 1 inch on all sides
+%
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+%
+%Doublespacing
+%
+\usepackage{setspace}
+\doublespacing
+
+%
+%Rotating tables (e.g. sideways when too long)
+%
+\usepackage{rotating}
+
+
+%
+%Fancy-header package to modify header/page numbering (insert last name)
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{} 
+\chead{} 
+
+\rhead{Meding \thepage} % Top right LAST name.
+
+\lfoot{} 
+\cfoot{} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.333in}
+
+%
+%Works cited environment
+%(to start, use \begin{workscited...}, each entry preceded by \bibent)
+% - from Ryan Alcock's MLA style file
+%
+\newcommand{\bibent}{\noindent \hangindent 40pt}
+\newenvironment{workscited}{\newpage \begin{center} Works Cited \end{center}}{\newpage }
+
+
+%
+%Begin document
+%
+\begin{document}
+\begin{flushleft}
+
+%%%%First page name, class, etc
+Michael Meding\\
+Dr. Dennis Kinney\\
+General Psychology 47.101\\
+31 January, 2015\\
+
+
+%%%%Title
+\begin{center}
+Getting the Flu Vaccine
+\end{center}
+
+
+%%%%Changes paragraph indentation to 0.5in
+\setlength{\parindent}{0.5in}
+%%%%Begin body of paper here
+
+Why get vaccinated? Each year thousands of people die of the flu in the United States and many more are hospitalized. So the better question is why would you not get vaccinated? 
+
+\newpage
+
+%
+%%%%%Title
+%\begin{center}
+%Notes
+%\end{center}
+%
+%
+%\setlength{\parindent}{0.5in}
+%
+%1. Danhof includes “Delaware, Maryland, all states north of the Potomac and Ohio rivers, Missouri, and states to its north” when referring to the northern states (11).
+%
+%
+%2. For the purposes of this paper,“science” is defined as it was in nineteenthcentury agriculture: conducting experiments and engaging in research.
+%
+%
+%3. Please note that any direct quotes from the nineteenth century texts are writtenin their original form, which may contain grammar mistakes according to twenty-first century grammar rules.
+%
+%%%%Works cited
+\begin{workscited}
+
+\bibent
+"VACCINE INFORMATION STATEMENT." Centers for Disease Control and Prevention, 19 Aug. 2014. Web. \textless http://www.cdc.gov/vaccines/hcp/vis/vis-statements/flu.pdf \textgreater.
+
+
+
+\end{workscited}
+
+\end{flushleft}
+\end{document}
+\}
