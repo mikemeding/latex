@@ -1,0 +1,124 @@
+\documentclass[12pt]{article}
+
+%
+%Margin - 1 inch on all sides
+%
+\usepackage[letterpaper]{geometry}
+\usepackage{times}
+\geometry{top=1.0in, bottom=1.0in, left=1.0in, right=1.0in}
+
+%
+%Doublespacing
+%
+\usepackage{setspace}
+\doublespacing
+
+%
+%Rotating tables (e.g. sideways when too long)
+%
+\usepackage{rotating}
+
+
+%
+%Fancy-header package to modify header/page numbering (insert last name)
+%
+\usepackage{fancyhdr}
+\pagestyle{fancy}
+\lhead{} 
+\chead{} 
+
+\rhead{Meding \thepage} % Top right LAST name.
+
+\lfoot{} 
+\cfoot{} 
+\rfoot{} 
+\renewcommand{\headrulewidth}{0pt} 
+\renewcommand{\footrulewidth}{0pt} 
+%To make sure we actually have header 0.5in away from top edge
+%12pt is one-sixth of an inch. Subtract this from 0.5in to get headsep value
+\setlength\headsep{0.333in}
+
+%
+%Works cited environment
+%(to start, use \begin{workscited...}, each entry preceded by \bibent)
+% - from Ryan Alcock's MLA style file
+%
+\newcommand{\bibent}{\noindent \hangindent 40pt}
+\newenvironment{workscited}{\newpage \begin{center} Works Cited \end{center}}{\newpage }
+
+
+%
+%Begin document
+%
+\begin{document}
+\begin{flushleft}
+
+%%%%First page name, class, etc
+Michael Meding\\
+Dr. Dennis Kinney\\
+General Psychology 47.101\\
+31 January, 2015\\
+
+
+%%%%Title
+\begin{center}
+Getting the Flu Vaccine
+\end{center}
+
+
+%%%%Changes paragraph indentation to 0.5in
+\setlength{\parindent}{0.5in}
+%%%%Begin body of paper here
+
+Influenza, otherwise known as the flu, is a common virus that spreads quickly both through the air and from direct contact with an infected person. Obvious symptoms of someone who has the flu are a cough or excessively runny or stuffy nose. If any of these symptoms are seen it is best to avoid all contact with that person until they are feeling better. This can range from person to person but will typically last one to two weeks.
+
+Every year thousands of people die due to the flu just in the United States alone, and thousands more are hospitalized. There can be more than 4 different strains of the flu virus being spread around at the same time each year. So the better question is why would you not get vaccinated? Those who are most at risk are those with weakened immune systems particularly the elderly and children who account for the majority of Influenza related deaths in the United States ("What are the Benefits of Flu Vaccination?"). 
+
+Influenza vaccination has additional benefits besides just helping you avoid this years infection. The influenza virus has an exponential growth pattern and by getting vaccinated you potentially stop hundreds of others from getting sick from your infection who then in turn do not infect others. Getting vaccinated can also make your illness milder if you do happen to get sick from another strain of the virus that was not covered by that particular vaccine.
+
+Vaccination helps protect women during pregnancy and their babies for up to 6 months after they are born. One study showed that giving flu vaccine to pregnant women was 92\% effective in preventing hospitalization of infants for flu (Benowitz, 2010). This can affect a pregnant mother by giving her a piece of mind knowing that her child will likely be protected from Influenza even 6 months after being born. The first 6 months is also the most vulnerable time for a child as they cannot receive the vaccine due to an underdeveloped immune system. 
+
+The psychosocial affects to those who get the vaccine have been shown to improve the state of public health by improving the overall attitude of those who have received the vaccine. Getting vaccinated can give someone a sense of relief knowing that they have one less thing to stress about this flu season. The benefits of getting vaccinated so far outweigh the risks of infection and other complications that it would be a mistake not to get vaccinated this year.
+
+
+
+
+
+\newpage
+
+%
+%%%%%Title
+%\begin{center}
+%Notes
+%\end{center}
+%
+%
+%\setlength{\parindent}{0.5in}
+%
+%1. Danhof includes “Delaware, Maryland, all states north of the Potomac and Ohio rivers, Missouri, and states to its north” when referring to the northern states (11).
+%
+%
+%2. For the purposes of this paper,“science” is defined as it was in nineteenthcentury agriculture: conducting experiments and engaging in research.
+%
+%
+%3. Please note that any direct quotes from the nineteenth century texts are writtenin their original form, which may contain grammar mistakes according to twenty-first century grammar rules.
+%
+%%%%Works cited
+\begin{workscited}
+
+\bibent
+Benowitz, Isaac, Daina B. Esposito, Kristina D. Gracey, Eugene D. Shapiro, and Marietta Vázquez. "Influenza Vaccine Given to Pregnant Women Reduces Hospitalization Due to Influenza in Their Infants." Department of Pediatrics, Yale University School of Medicine (2010). Print.
+
+\bibent
+"VACCINE INFORMATION STATEMENT." Centers for Disease Control and Prevention, 19 Aug. 2014. Web. \textless http://www.cdc.gov/vaccines/hcp/vis/vis-statements/flu.pdf \textgreater.
+
+\bibent
+"What Are the Benefits of Flu Vaccination?" Centers for Disease Control and Prevention. Web. \textless http://www.cdc.gov/flu/pdf/freeresources/general/flu-vaccine-benefits.pdf \textgreater
+
+
+
+\end{workscited}
+
+\end{flushleft}
+\end{document}
+\}

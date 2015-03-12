@@ -1,0 +1,80 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Short Sectioned Assignment
+% LaTeX Template
+% Version 1.0 (5/5/12)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Frits Wenneker (http://www.howtotex.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[paper=a4, fontsize=11pt]{scrartcl} % A4 paper and 11pt font size
+
+\usepackage[T1]{fontenc} % Use 8-bit encoding that has 256 glyphs
+\usepackage[english]{babel} % English language/hyphenation
+\usepackage{amsmath,amsfonts,amsthm} % Math packages
+\usepackage{sectsty} % Allows customizing section commands
+\allsectionsfont{\centering \normalfont\scshape} % Make all sections centered, the default font and small caps
+\usepackage{fancyhdr} % Custom headers and footers
+\pagestyle{fancyplain} % Makes all pages in the document conform to the custom headers and footers
+\fancyhead{} % No page header - if you want one, create it in the same way as the footers below
+\fancyfoot[L]{} % Empty left footer
+\fancyfoot[C]{} % Empty center footer
+\fancyfoot[R]{\thepage} % Page numbering for right footer
+\renewcommand{\headrulewidth}{0pt} % Remove header underlines
+\renewcommand{\footrulewidth}{0pt} % Remove footer underlines
+\setlength{\headheight}{13.6pt} % Customize the height of the header
+\numberwithin{equation}{section} % Number equations within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{figure}{section} % Number figures within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\numberwithin{table}{section} % Number tables within sections (i.e. 1.1, 1.2, 2.1, 2.2 instead of 1, 2, 3, 4)
+\setlength\parindent{0pt} % Removes all indentation from paragraphs - comment this line for an assignment with lots of text
+
+%----------------------------------------------------------------------------------------
+%	TITLE SECTION
+%----------------------------------------------------------------------------------------
+
+\newcommand{\horrule}[1]{\rule{\linewidth}{#1}} % Create horizontal rule command with 1 argument of height
+
+\title{	
+\normalfont \normalsize 
+\textsc{University of Massachusetts Lowell, Computer Science} \\ [25pt] % Your university, school and/or department name(s)
+\horrule{0.5pt} \\[0.4cm] % Thin top horizontal rule
+\huge Week 2 Report \\ % The assignment title
+\horrule{2pt} \\[0.5cm] % Thick bottom horizontal rule
+}
+
+\author{Michael Meding} % Your name
+
+\date{\normalsize\today} % Today's date or a custom date
+
+\begin{document}
+
+\maketitle % Print the title
+
+%----------------------------------------------------------------------------------------
+%	Section 1
+%----------------------------------------------------------------------------------------
+
+%\section{blah}
+\paragraph{}
+This week Hoanh and I met up and decided that we would be doing the SemEval 2015 Task 1. This task involves paraphrasing Tweets to detect if they are referencing the same topic. SemEval was the logical choice for our task this semester as it did not require us to spend time generating a dataset to serve as our gold standard. Additionally, included with this task is baseline python code for us to get started thus streamlining our design process and allowing us to focus on our algorithm for the task. 
+
+\paragraph{}
+Andrew, Goldberg (2007). Automatic Summarization was one of the articles that I read while beginning my research into text paraphrasing and topic detection. The article details several different approaches using both unsupervised and supervised machine learning and the pros and cons of each. TextRank is another technology that the article talks about for use with finding lexical similarity between text units similar to Word2Vec as discussed in class. 
+
+\paragraph{}
+Hercules, Dalianis (2003). Porting and evaluation of automatic summarization. This article talks about attempting to implement a text summarization algorithm to several Scandinavian languages and contains some good information about implementing state-of-the-art text extraction algorithms which may prove useful for this task.
+
+\paragraph{}
+To conclude, I found that text summerization an paraphrasing is quite ambiguous and relies heavily on supervised models that are trained specifically to the articles to which they will be analysing. Furthermore, Twitter data is hard to train for as it is very short with only 140 characters or less and the topics are extremely broad. This leads to a very challenging supervised model or a rather complicated unsupervised model to fit the data correctly which is what will be required for this task.
+\end{document}
