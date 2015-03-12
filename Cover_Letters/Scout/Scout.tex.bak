@@ -1,0 +1,102 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Plain Cover Letter
+% LaTeX Template
+% Version 1.0 (28/5/13)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Rensselaer Polytechnic Institute 
+% http://www.rpi.edu/dept/arc/training/latex/resumes/
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[11pt]{letter} % Default font size of the document, change to 10pt to fit more text
+
+\usepackage{newcent} % Default font is the New Century Schoolbook PostScript font 
+%\usepackage{helvet} % Uncomment this (while commenting the above line) to use the Helvetica font
+
+% Margins
+\topmargin=-1in % Moves the top of the document 1 inch above the default
+\textheight=8.5in % Total height of the text on the page before text goes on to the next page, this can be increased in a longer letter
+\oddsidemargin=-10pt % Position of the left margin, can be negative or positive if you want more or less room
+\textwidth=6.5in % Total width of the text, increase this if the left margin was decreased and vice-versa
+
+\let\raggedleft\raggedright % Pushes the date (at the top) to the left, comment this line to have the date on the right
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	ADDRESSEE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{letter}{Ken Lazarus \\
+Chief Executive Officer \\
+Scout Exchange LLC. \\
+711 Boylston Street \\
+Boston, MA 02116 
+}
+
+%----------------------------------------------------------------------------------------
+%	YOUR NAME & ADDRESS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{center}
+\large\bf Michael Meding \\ % Your name
+%\vspace{20pt} \hrule height 1pt % If you would like a horizontal line separating the name from the address, uncomment the line to the left of this text
+181 Bacon St. \\ Natick, MA 01760 \\ (214) 334-1905 \\ mikeymeding@gmail.com % Your address and phone number
+\end{center} 
+\vfill
+
+\signature{Michael Meding} % Your name for the signature at the bottom
+
+%----------------------------------------------------------------------------------------
+%	LETTER CONTENT SECTION
+%----------------------------------------------------------------------------------------
+
+\opening{Dear Dr. Ken Lazarus,} 
+
+%What we’re looking for 
+%We work with Python (Flask), Javascript (jQuery, Backbone.js), CSS (Sass), MySql, MongoDB, Elastic Search, Redis, AWS, Puppet, nginx, Jenkins, Git, and more.
+%Those technologies not your areas of expertise?  No problem, great developers can pick up new technologies in no time, and great developers are what we’re seeking.  
+%We put the greatest value in a developer’s ability to creatively problem solve, write great code, work collaboratively, and learn new skills.  We will challenge you while giving you all the tools and support to succeed.
+%You will be asked to contribute to all aspects of our products.  Just a few of these areas includes:
+%Writing high quality, testable and scalable code.  We believe strongly in automated testing and code reviews.
+%Collaborating with fellow developers, QA engineers, and product owners to define features and drive future product direction
+%Solving challenges in performing 3pty API integrations
+%Consuming REST and SOAP APIs to exchange data with clients
+%Deploying code to AWS.  No data centers here.
+ 
+%PARAGRAPH ONE: State the reason for the letter, name the position or type of work you are applying for and identify the source from which you learned of the opening (i.e. career development center, newspaper, employment service, personal contact).
+
+I am writing in response to your LinkedIn job listing in which you expressed interest in a Software Developer to join the Scout Exchange team.
+
+%PARAGRAPH TWO: Indicate why you are interested in the position, the company, its products, services - above all, stress what you can do for the employer. If you are a recent graduate, explain how your academic background makes you a qualified candidate for the position. If you have practical work experience, point out specific achievements or unique qualifications. Try not to repeat the same information the reader will find in the resume. Refer the reader to the enclosed resume or application which summarizes your qualifications, training, and experiences. The purpose of this section is to strengthen your resume by providing details which bring your experiences to life. 
+
+I have three years experience in writing both client and server-sided applications. I am a proficient Python programmer, although Java is my primary language of choice. As a software developer for Outsmart Power Systems, I have demonstrated my abilities with the full Java enterprise web stack for creating professional business applications. Additionally, I am experienced with Linux-based operating systems and am no stranger to coding in a team using version control such as github.
+
+ 
+%PARAGRAPH THREE: Request a personal interview and indicate your flexibility as to the time and place. Repeat your phone number in the letter and offer assistance to help in a speedy response. For example, state that you will be in the city where the company is located on a certain date and would like to set up an interview. Alternatively, state that you will call on a certain date to set up an interview. End the letter by thanking the employer for taking time to consider your credentials. 
+
+In my current job I am responsible for transitioning software from slow, unmaintainable PHP and Java requests into full enterprise applications. This has given me experience in all areas of application development such as web front end work using Javascript, jQuery and AngularJS, writing database schemas in MYSQL, connecting applications using JMS, deploying said applications to their respective servers remotely, and of course, writing the actual application logic. I am expected to graduate with a Bachelors of Science in Computer Science this May from the University of Massachusetts Lowell. Included with this letter is a copy of resume.
+
+I look forward to hearing from you.
+
+\closing{Sincerely yours,}
+
+
+%\encl{Curriculum vitae, employment form} % List your enclosed documents here, comment this out to get rid of the "encl:"
+
+%----------------------------------------------------------------------------------------
+
+\end{letter}
+
+\end{document}
