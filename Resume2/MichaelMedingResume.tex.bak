@@ -1,0 +1,104 @@
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass{resume} % Use the custom resume.cls style
+
+\usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+
+\name{Michael Meding}
+\address{(214)~$\cdot$~334~$\cdot$~1905 \\ mikeymeding@gmail.com} 
+\address{www.mikemeding.com}
+\address{181 Bacon St \\ Natick, Massachusetts 01760}
+
+
+
+\begin{document}
+
+%----------------------------------------------------------------------------------------
+%	EDUCATION SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Education}
+
+{\bf University of Massachusetts Lowell} \hfill {\em May 2015} \\ 
+B.S. in Computer Science  \smallskip \\
+%Overall GPA: 5.678
+{\bf Massachusetts Bay Community College} \hfill {\em December 2013} \\ 
+A.S. in Computer Science  \smallskip \\
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	WORK EXPERIENCE SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Experience}
+
+%--------------------------- OUTSCHMART --------------------------------------
+
+\begin{rSubsection}{Outsmart Power Systems}{August 2011 - Present}{Developer}{Natick, MA}
+\item Programmed large existing enterprise web application from PHP and Java SE to Java EE 7 using EJB3 and RESTful web services.
+\item Designed and coded a front end content management system for maintaining data relating to specific customer configurations. This included responsive web design elements for both mobile and desktop web applications using jQuery and Twitter Bootstrap.
+\item Responsible for the deployment of the above web application to respective app and web servers.
+\item Documented all projects and experiments using \LaTeX.
+\item Responsible for testing many services using full jUnit 4 test suite.
+\end{rSubsection}
+
+%--------------------------- CRACK ATTACK --------------------------------------
+
+\begin{rSubsection}{Rack Attack Inc.}{May 2010 - June 2011}{Mechanic and Clerk}{Framingham, MA}
+\item Mechanic and store front clerk at a shop that sells and installs trailer hitches.
+\end{rSubsection}
+
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	RELEVANT WORK
+%----------------------------------------------------------------------------------------
+\begin{rSection}{Relevant Work}
+
+% NLP PROJECT
+{\bf NLP Twitter Bullying Project} \hfill {\em Sept 2014 - Current} \\ 
+A machine learning and data mining project that learns from a corpus of compiled tweets from Twitter to discover bullies who use social media
+
+% ODB STUFF
+{\bf Arduino ODB2 Protocol Tool} \hfill {\em Sept 2013 - Current} \\ 
+A K-line protocol engine diagnostic and logging tool which I have been developing in my spare time using an Arduino and an ECU simulator  \smallskip \\
+
+\end{rSection}
+
+
+
+%----------------------------------------------------------------------------------------
+%	TECHNICAL STRENGTHS SECTION
+%----------------------------------------------------------------------------------------
+
+\begin{rSection}{Technical Strengths}
+
+\begin{tabular}{ @{} >{\bfseries}l @{\hspace{6ex}} l }
+Computer Languages & Java 7 \& 8, Java EE 7, JavaScript,  HTML 5, C, C++,  Scheme,\\
+ 					&  Linux Bash, Assembly, Python 2 \& 3, Misc. Firmware C code, \LaTeX \\
+ Protocols \& APIs & XML, JSON,  REST, AJAX, jQuery, CSS3, EJB3, JMS, jUnit 3 \& 4 \\
+         Databases & MySQL, Derby \\
+			 Tools & SVN, Git, Vim, Netbeans, VisualVM \\
+		 Platforms & Ubuntu (Since Ver 7.04), LinuxMint, CentOS (Since Ver 5.8), Fedora, \\
+ & Mac OSX , and of course Windows \\
+\end{tabular}
+
+\end{rSection}
+
+%----------------------------------------------------------------------------------------
+%	EXAMPLE SECTION
+%----------------------------------------------------------------------------------------
+
+%\begin{rSection}{Section Name}
+
+%Section content\ldots
+
+%\end{rSection}
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
