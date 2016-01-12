@@ -3,8 +3,26 @@
 %----------------------------------------------------------------------------------------
 
 \documentclass{resume} % Use the custom resume.cls style
+\usepackage[utf8]{inputenc}
+% Palatino font
+\usepackage{palatino}
+% Make the letter spacing/kerning look nice
+%\usepackage{microtype}
+\usepackage[activate={true,nocompatibility},final,tracking=true,kerning=true,spacing=true,factor=1100,stretch=10,shrink=10]{microtype}
+
+%\usepackage{utopia}
+\renewcommand{\familydefault}{\sfdefault}
+
+% Make sure the PDF output is all unicode and machine-readable
+\input{glyphtounicode}
+\pdfgentounicode=1
 
 \usepackage[left=0.75in,top=0.6in,right=0.75in,bottom=0.6in]{geometry} % Document margins
+\usepackage[bookmarks=true,pdfborder={0 0 0},colorlinks=true,urlcolor=black,linkcolor=blue]{hyperref}
+
+%----------------------------------------------------------------------------------------
+%	HEADER SECTION
+%----------------------------------------------------------------------------------------
 
 \name{Michael Meding}
 \address{(214)~$\cdot$~334~$\cdot$~1905 \\ mikeymeding@gmail.com} 
@@ -57,7 +75,7 @@ A.S. in Computer Science  \smallskip \\
 %----------------------------------------------------------------------------------------
 \begin{rSection}{Relevant Work}
 % 3D Printing
-{\bf Designed and built a 3D printer} \hfill {\em Dec 2014 - Current} \\ 
+{\bf Designed and built a 3D printer} \hfill {\em Aug 2015 - Current} \\ 
 Started with a reprap based 3D printer and decided to design my own 3D printer. The printer is now so well calibrated that it prints as well as a professional quality machine at a tenth of the cost.
 
 % NLP PROJECT
