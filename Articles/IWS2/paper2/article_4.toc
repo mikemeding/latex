@@ -1,1 +1,3 @@
 \contentsline {paragraph}{}{1}{Doc-Start}
+\contentsline {section}{\numberline {1}Background}{2}{section.1}
+\contentsline {paragraph}{}{2}{section.1}
