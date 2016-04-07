@@ -1,5 +1,9 @@
 \begin{thebibliography}{1}
 
+\bibitem{fowler}
+Martin Fowler.
+\newblock Gui architectures, 2006.
+
 \bibitem{Kambona}
 Kennedy Kambona, Elisa~Gonzalez Boix, and Wolfgang De~Meuter.
 \newblock An evaluation of reactive programming and promises for structuring
