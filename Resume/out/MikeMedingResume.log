@@ -1,10 +1,10 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.18)  23 JUL 2018 16:15
+This is pdfTeX, Version 3.14159265-2.6-1.40.16 (TeX Live 2015/Debian) (preloaded format=pdflatex 2018.7.18)  24 JUL 2018 15:02
 entering extended mode
  restricted \write18 enabled.
  file:line:error style messages enabled.
  %&-line parsing enabled.
-**example.tex
-(./example.tex
+**MikeMedingResume.tex
+(./MikeMedingResume.tex
 LaTeX2e <2016/02/01>
 Babel <3.9q> and hyphenation patterns for 81 language(s) loaded.
 (./two-column-resume.cls
@@ -364,8 +364,8 @@ Package: enumitem 2011/09/28 v3.5.2 Customized lists
 \enit@inbox=\box27
 \enitdp@description=\count102
 )
-(/data/personal/latex/Resume/out/example.aux)
-\openout1 = `example.aux'.
+(/data/personal/latex/Resume/out/MikeMedingResume.aux)
+\openout1 = `MikeMedingResume.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 5.
 LaTeX Font Info:    ... okay on input line 5.
@@ -462,10 +462,10 @@ LaTeX Info: Redefining \ref on input line 5.
 LaTeX Info: Redefining \pageref on input line 5.
 LaTeX Info: Redefining \nameref on input line 5.
 
-(/data/personal/latex/Resume/out/example.out)
-(/data/personal/latex/Resume/out/example.out)
+(/data/personal/latex/Resume/out/MikeMedingResume.out)
+(/data/personal/latex/Resume/out/MikeMedingResume.out)
 \@outlinefile=\write3
-\openout3 = `example.out'.
+\openout3 = `MikeMedingResume.out'.
 
 LaTeX Font Info:    Try loading font information for T1+Raleway-TLF on input li
 ne 6.
@@ -479,47 +479,47 @@ LaTeX Font Info:    Font shape `T1/Raleway-TLF/t/n' will be
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/m/n' will be
 (Font)              scaled to size 40.0pt on input line 6.
 LaTeX Font Info:    Font shape `T1/Raleway-TLF/l/n' will be
-(Font)              scaled to size 16.0pt on input line 17.
+(Font)              scaled to size 16.0pt on input line 15.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <10.95> on input line 38.
+(Font)              <10.95> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <8> on input line 38.
+(Font)              <8> on input line 40.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <6> on input line 38.
+(Font)              <6> on input line 40.
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:40: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.40         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:40: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.40         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -527,10 +527,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:40: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.40         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -538,39 +538,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:40: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.40         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:40: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.40         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -578,10 +578,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:40: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.40         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -589,39 +589,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:40: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.40         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:40: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.40         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -629,10 +629,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:40: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.40         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -640,39 +640,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:40: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.40         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:40: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.40         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -680,10 +680,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:40: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.40         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -691,39 +691,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:40: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.40         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:40: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.40         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -731,10 +731,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:40: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.40         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -742,39 +742,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:40: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.40         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:40: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.40         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -782,10 +782,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:40: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.40         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -793,39 +793,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:40: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.40         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:40: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.40         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:40: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.40         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -833,10 +833,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:40: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.40         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -844,39 +844,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:48: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.48         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:48: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.48         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:48: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.48         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:48: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.48         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -884,10 +884,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:48: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.48         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -895,39 +895,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:48: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.48         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:38: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:48: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.38         }
+l.48         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:38: Missing $ inserted.
+./MikeMedingResume.tex:48: Missing $ inserted.
 <inserted text> 
                 $
-l.38         }
+l.48         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:38: Missing } inserted.
+./MikeMedingResume.tex:48: Missing } inserted.
 <inserted text> 
                 }
-l.38         }
+l.48         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -935,10 +935,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:38: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:48: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.38         }
+l.48         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -946,39 +946,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:46: Missing $ inserted.
+./MikeMedingResume.tex:48: Missing $ inserted.
 <inserted text> 
                 $
-l.46         }
+l.48         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:46: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:48: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46         }
+l.48         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:46: Missing $ inserted.
+./MikeMedingResume.tex:48: Missing $ inserted.
 <inserted text> 
                 $
-l.46         }
+l.48         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:46: Missing } inserted.
+./MikeMedingResume.tex:48: Missing } inserted.
 <inserted text> 
                 }
-l.46         }
+l.48         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -986,10 +986,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:46: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:48: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.46         }
+l.48         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -997,39 +997,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:46: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.46         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:46: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:61: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46         }
+l.61         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:46: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.46         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:46: Missing } inserted.
+./MikeMedingResume.tex:61: Missing } inserted.
 <inserted text> 
                 }
-l.46         }
+l.61         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1037,10 +1037,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:46: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:61: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.46         }
+l.61         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1048,39 +1048,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:46: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.46         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:46: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:61: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.46         }
+l.61         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:46: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.46         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:46: Missing } inserted.
+./MikeMedingResume.tex:61: Missing } inserted.
 <inserted text> 
                 }
-l.46         }
+l.61         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1088,10 +1088,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:46: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:61: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.46         }
+l.61         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1099,39 +1099,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:59: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:61: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         }
+l.61         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:59: Missing } inserted.
+./MikeMedingResume.tex:61: Missing } inserted.
 <inserted text> 
                 }
-l.59         }
+l.61         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1139,10 +1139,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:59: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:61: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.59         }
+l.61         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1150,39 +1150,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:59: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:61: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         }
+l.61         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:59: Missing } inserted.
+./MikeMedingResume.tex:61: Missing } inserted.
 <inserted text> 
                 }
-l.59         }
+l.61         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1190,10 +1190,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:59: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:61: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.59         }
+l.61         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1201,39 +1201,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:59: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:61: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         }
+l.61         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:59: Missing } inserted.
+./MikeMedingResume.tex:61: Missing } inserted.
 <inserted text> 
                 }
-l.59         }
+l.61         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1241,10 +1241,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:59: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:61: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.59         }
+l.61         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1252,39 +1252,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:59: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:61: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         }
+l.61         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:59: Missing } inserted.
+./MikeMedingResume.tex:61: Missing } inserted.
 <inserted text> 
                 }
-l.59         }
+l.61         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1292,10 +1292,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:59: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:61: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.59         }
+l.61         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1303,39 +1303,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:59: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:61: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         }
+l.61         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:59: Missing } inserted.
+./MikeMedingResume.tex:61: Missing } inserted.
 <inserted text> 
                 }
-l.59         }
+l.61         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1343,10 +1343,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:59: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:61: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.59         }
+l.61         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1354,39 +1354,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:59: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:61: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         }
+l.61         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:61: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.61         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:59: Missing } inserted.
+./MikeMedingResume.tex:61: Missing } inserted.
 <inserted text> 
                 }
-l.59         }
+l.61         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1394,10 +1394,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:59: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:61: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.59         }
+l.61         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1405,39 +1405,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:68: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.68         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:59: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:68: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         }
+l.68         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:68: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.68         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:59: Missing } inserted.
+./MikeMedingResume.tex:68: Missing } inserted.
 <inserted text> 
                 }
-l.59         }
+l.68         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1445,10 +1445,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:59: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:68: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.59         }
+l.68         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1456,39 +1456,39 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:68: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.68         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
 
-./example.tex:59: LaTeX Error: There's no line here to end.
+./MikeMedingResume.tex:68: LaTeX Error: There's no line here to end.
 
 See the LaTeX manual or LaTeX Companion for explanation.
 Type  H <return>  for immediate help.
  ...                                              
                                                   
-l.59         }
+l.68         }
               
 Your command was ignored.
 Type  I <command> <return>  to replace it with another command,
 or  <return>  to continue without it.
 
-./example.tex:59: Missing $ inserted.
+./MikeMedingResume.tex:68: Missing $ inserted.
 <inserted text> 
                 $
-l.59         }
+l.68         }
               
 I've inserted a begin-math/end-math symbol since I think
 you left one out. Proceed, with fingers crossed.
 
-./example.tex:59: Missing } inserted.
+./MikeMedingResume.tex:68: Missing } inserted.
 <inserted text> 
                 }
-l.59         }
+l.68         }
               
 I've inserted something that you may have forgotten.
 (See the <inserted text> above.)
@@ -1496,10 +1496,10 @@ With luck, this will get me unwedged. But if you
 really didn't forget anything, try typing `2' now; then
 my insertion and my current dilemma will both disappear.
 
-./example.tex:59: Extra }, or forgotten \endgroup.
+./MikeMedingResume.tex:68: Extra }, or forgotten \endgroup.
 \par ...m \@noitemerr {\@@par }\fi \else {\@@par }
                                                   \fi 
-l.59         }
+l.68         }
               
 I've deleted a group-closing symbol because it seems to be
 spurious, as in `$x}$'. But perhaps the } is legitimate and
@@ -1507,30 +1507,31 @@ you forgot something else, as in `\hbox{$x}'. In such cases
 the way to recover is to insert both the forgotten and the
 deleted material, e.g., by typing `I$}'.
 
-LaTeX Font Info:    Try loading font information for TS1+fds on input line 74.
+LaTeX Font Info:    Try loading font information for TS1+fds on input line 89.
 (/usr/share/texlive/texmf-dist/tex/latex/droid/ts1fds.fd
 File: ts1fds.fd 2011/09/11 Fontinst v1.933 font definitions for TS1/fds.
 )
-Package atveryend Info: Empty hook `BeforeClearDocument' on input line 109.
+Package atveryend Info: Empty hook `BeforeClearDocument' on input line 128.
  [1
 
 {/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}]
-Package atveryend Info: Empty hook `AfterLastShipout' on input line 109.
- (/data/personal/latex/Resume/out/example.aux)
-Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 109.
-Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 109.
-Package rerunfilecheck Info: File `example.out' has not changed.
+Package atveryend Info: Empty hook `AfterLastShipout' on input line 128.
+
+(/data/personal/latex/Resume/out/MikeMedingResume.aux)
+Package atveryend Info: Executing hook `AtVeryEndDocument' on input line 128.
+Package atveryend Info: Executing hook `AtEndAfterFileList' on input line 128.
+Package rerunfilecheck Info: File `MikeMedingResume.out' has not changed.
 (rerunfilecheck)             Checksum: <no file>.
-Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 109.
+Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 128.
  ) 
 Here is how much of TeX's memory you used:
- 7666 strings out of 493029
- 113699 string characters out of 6136234
- 202538 words of memory out of 5000000
- 11082 multiletter control sequences out of 15000+600000
- 69909 words of font info for 51 fonts, out of 8000000 for 9000
+ 7676 strings out of 493029
+ 113956 string characters out of 6136234
+ 204538 words of memory out of 5000000
+ 11084 multiletter control sequences out of 15000+600000
+ 80311 words of font info for 61 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 36i,5n,37p,231b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 36i,5n,37p,240b,405s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texlive/texmf-dist/fonts/enc/dvips/droid/droid-03.enc}{/usr/share
 /texlive/texmf-dist/fonts/enc/dvips/droid/droid-01.enc}{/usr/share/texlive/texm
 f-dist/fonts/enc/dvips/raleway/a_bzmckq.enc}</usr/share/texlive/texmf-dist/font
@@ -1540,8 +1541,8 @@ lari/raleway/Raleway-Light.pfb></usr/share/texlive/texmf-dist/fonts/type1/impal
 lari/raleway/Raleway-Regular.pfb></usr/share/texlive/texmf-dist/fonts/type1/imp
 allari/raleway/Raleway-Thin.pfb></usr/share/texlive/texmf-dist/fonts/type1/publ
 ic/amsfonts/cm/cmsy10.pfb>
-Output written on /data/personal/latex/Resume/out/example.pdf (1 page, 86664 by
-tes).
+Output written on /data/personal/latex/Resume/out/MikeMedingResume.pdf (1 page,
+ 88047 bytes).
 PDF statistics:
  60 PDF objects out of 1000 (max. 8388607)
  50 compressed objects within 1 object stream

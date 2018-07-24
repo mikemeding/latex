@@ -1,0 +1,128 @@
+\documentclass{two-column-resume}
+\usepackage[hidelinks]{hyperref}
+\usepackage{enumitem}
+
+\begin{document}
+    \name{Michael}{Meding}
+    \contact{\href{mailto:mike@mikemeding.com}{mike@mikemeding.com} | +1 (214) 334-1905}
+    \headerline
+    \noindent
+    \begin{minipage}[t]{0.33\textwidth}
+        \vspace{0.5\baselineskip}
+
+
+        %============================ EDUCATION ========================================
+        \section{Education}
+        \shortitem{Masters \tiny{Computer Science}}
+        \itemdetails{
+        \footnotesize{University of Massachusetts Lowell} \\
+        \footnotesize{May 2016}
+        }
+
+        \shortitem{Bachelors \tiny{Computer Science}}
+        \itemdetails{
+        \footnotesize{University of Massachusetts Lowell} \\
+        \footnotesize{May 2015}
+        }
+
+        %============================ LANGUAGE PROFICIENCIES ========================================
+        \section{Proficiencies}
+        \shortitem{Languages}
+        \itemdetails{
+        Java 7 \& 8 \bullet\bullet\bullet\bullet\bullet\\%
+        Python 2 \& 3 \bullet\bullet\bullet\bullet\bullet\\%
+        JavaScript \bullet\bullet\bullet\bullet\bullet\\%
+        C/C++ \bullet\bullet\bullet\bullet\circ\\%
+        Firmware C (Atmel+Microchip)\\
+        Linux Bash \bullet\bullet\bullet\bullet\bullet\\%
+        Assembly \bullet\bullet\bullet\circ\circ\\%
+        \LaTeX \space\bullet\bullet\bullet\bullet\circ\\
+        }
+
+        %============================ DATABASES ========================================
+        \shortitem{Databases}
+        \itemdetails{
+        MySQL \bullet\bullet\bullet\bullet\bullet\\%
+        MongoDB \bullet\bullet\bullet\bullet\circ\\%
+        Neo4j \bullet\bullet\bullet\circ\circ\\%
+        }
+
+        %============================ WEB TECHNOLOGIES ========================================
+        \shortitem{Web Technologies}
+        \itemdetails{
+        AngularJS \bullet\bullet\bullet\bullet\bullet\\%
+        Twitter Bootstrap \bullet\bullet\bullet\bullet\bullet\\%
+        D3 \bullet\bullet\bullet\bullet\bullet\\%
+        HTML5 \bullet\bullet\bullet\bullet\circ\\%
+        jQuery \bullet\bullet\bullet\bullet\circ\\%
+        CSS3 \bullet\bullet\bullet\bullet\circ\\%
+        Sass \bullet\bullet\bullet\bullet\circ\\%
+        SVG \bullet\bullet\bullet\circ\circ\\%
+        }
+
+        \shortitem{Other}
+        \itemdetails{
+        Solidworks \bullet\bullet\bullet\bullet\circ\\%
+        ROS \bullet\bullet\bullet\circ\circ\\
+        (Robot Operating System) \\
+        }
+
+
+    \end{minipage}% This hacky percent sign is for removing the space between two columns.
+    \begin{minipage}[t]{0.67\textwidth}
+        \vspace{0.5\baselineskip}
+
+
+        %============================ EXPERIENCE ========================================
+        \section{Experience}
+        % EFACTO
+        \longitem{Senior Software Developer}{}{Efacto Power}{Jan 2017 - Present}
+        \itemdetails{
+        \begin{itemize}[itemsep=0pt]
+            \item Designed a cloud based big data time series for storing and analyzing patterns in energy.
+            This leverages the power of Hadoop and the OpenTSDB framework.
+            Additional details of this can be found on my website listed above.
+            \item Managing product development and production of the IoT gateways and sensors.
+            This involves the electronics manufacturing processes from concept to production design.
+            \item Developed the firmware for the water measurement sensor.
+        \end{itemize}
+        }
+        % OUTSMART
+        \longitem{Software Developer}{}{Outsmart Power Systems}{Aug 2015 - Dec 2016}
+        \itemdetails{
+        \begin{itemize}[itemsep=0pt]
+            \item Created a content management system for maintaining customer data on the web.
+            This included responsive web design elements for both mobile and desktop using AngularJS.
+            \item Built a websocket based IoT communication platform using Java.
+            \item Designed custom and responsive D3 graphs for in depth energy analysis.
+        \end{itemize}
+        }
+
+
+        %============================ PROJECTS ========================================
+        \section{Projects}
+        \longitem{Web Based 3D Slicer}{}{University of Massachusetts Lowell}{2015 - 2016}
+        \itemdetails{
+        Wrote one of the first 3D print slicers to be deployed to the web.
+        It included a Gcode analyzer with detailed settings input.
+        This project was also tested on a 3D printer of my own design.
+        }
+        \longitem{Solidworks Design}{}{Massachusetts Bay Community College}{2015 - Present}
+        \itemdetails{
+        Mechanical Engineering studies part time and have a background designing parts in Solidworks.
+        Several of my designs are now in production applications for Efacto Power.
+        }
+
+%        \section{Research}
+%        \longitem{Research Title}{}{Place}{Start Date - End Date}
+%        \itemdetails{
+%        \textit{Styles here are kept.}
+%        }
+%        \section{Awards}
+%        \shortitem{Clean Energy Internship}
+%        \itemdetails{Short items can also be used on the right column.}
+%        \section{Other}
+%        Custom styles can also be used here.
+%        For example, a list of publications using BibTeX.
+    \end{minipage}
+\end{document}
