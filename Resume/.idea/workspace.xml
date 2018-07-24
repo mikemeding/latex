@@ -11,11 +11,11 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="example.tex" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/example.tex">
+      <file leaf-file-name="MikeMedingResume.tex" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/MikeMedingResume.tex">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="224">
-              <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+            <state relative-caret-position="84">
+              <caret line="6" column="134" selection-start-line="6" selection-start-column="134" selection-end-line="6" selection-end-column="134" />
               <folding>
                 <element signature="e#34#66#2" expanded="true" />
               </folding>
@@ -39,6 +39,7 @@
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/example.tex" />
+        <option value="$PROJECT_DIR$/MikeMedingResume.tex" />
       </list>
     </option>
   </component>
@@ -170,15 +171,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532368521261</updated>
-      <workItem from="1532368522557" duration="16284000" />
+      <workItem from="1532368522557" duration="17338000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="16284000" />
+    <option name="totallyTimeSpent" value="17338000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-3840" y="-4" width="1920" height="1084" extended-state="6" />
+    <frame x="0" y="-4" width="1920" height="1084" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info anchor="right" id="Palette" />
@@ -220,10 +221,10 @@
     <entry file="file://$PROJECT_DIR$/two-column-resume.cls">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/example.tex">
+    <entry file="file://$PROJECT_DIR$/MikeMedingResume.tex">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="224">
-          <caret line="106" column="27" selection-start-line="106" selection-start-column="27" selection-end-line="106" selection-end-column="27" />
+        <state relative-caret-position="84">
+          <caret line="6" column="134" selection-start-line="6" selection-start-column="134" selection-end-line="6" selection-end-column="134" />
           <folding>
             <element signature="e#34#66#2" expanded="true" />
           </folding>
