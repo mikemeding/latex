@@ -29,11 +29,11 @@
         \section{Proficiencies}
         \shortitem{Languages}
         \itemdetails{
-        Java 7 \& 8 $\bullet\bullet\bullet\bullet\bullet$\\
         Python 2 \& 3 $\bullet\bullet\bullet\bullet\bullet$\\
         JavaScript $\bullet\bullet\bullet\bullet\bullet$\\
+        Java 7 \& 8 $\bullet\bullet\bullet\bullet\bullet$\\
         C/C++ $\bullet\bullet\bullet\bullet\circ$\\%
-        Firmware C (Atmel+Microchip)\\
+%        Firmware C (Atmel+Microchip)\\
         Linux Bash $\bullet\bullet\bullet\bullet\bullet$\\%
         Assembly $\bullet\bullet\bullet\circ\circ$\\%
         \LaTeX $\space\bullet\bullet\bullet\bullet\circ$\\
@@ -43,6 +43,7 @@
         \shortitem{Databases}
         \itemdetails{
         MySQL $\bullet\bullet\bullet\bullet\bullet$\\%
+        InfluxDB $\bullet\bullet\bullet\bullet\circ$\\%
         MongoDB $\bullet\bullet\bullet\bullet\circ$\\%
         Neo4j $\bullet\bullet\bullet\circ\circ$\\%
         }
@@ -51,6 +52,8 @@
         \shortitem{Web Technologies}
         \itemdetails{
         AngularJS $\bullet\bullet\bullet\bullet\bullet$\\%
+        ReactJS $\bullet\bullet\bullet\bullet\bullet$\\%
+        Redux $\bullet\bullet\bullet\bullet\bullet$\\%
         Twitter Bootstrap $\bullet\bullet\bullet\bullet\bullet$\\%
         D3 $\bullet\bullet\bullet\bullet\bullet$\\%
         HTML5 $\bullet\bullet\bullet\bullet\circ$\\%
@@ -75,26 +78,34 @@
 
         %============================ EXPERIENCE ========================================
         \section{Experience}
+        % ZEA
+        \longitem{Lead Software Developer}{}{Zea Biosciences}{Sep 2018 - Present}
+        \itemdetails{
+        \begin{itemize}[itemsep=0pt]
+            \item Created an intelligent plant growth and facilities management system.
+            The system is a 3-tier SPA design using Django and ReactJS technologies.
+            \item Integrated existing systems data into an InfluxDB time series database for live plant condition analysis.
+            \item Handled all linux systems administration and software deployment.
+        \end{itemize}
+        }
         % EFACTO
-        \longitem{Senior Software Developer}{}{Efacto Power}{Jan 2017 - Present}
+        \longitem{Senior Software Developer}{}{Efacto Power}{Jan 2017 - Aug 2018}
         \itemdetails{
         \begin{itemize}[itemsep=0pt]
             \item Designed a cloud-based big data time series for storing and analyzing patterns in energy.
-            This leverages the power of Hadoop and the OpenTSDB framework.
-            Additional details of this can be found on my website listed above.
+            This design leveraged the power of Hadoop and the OpenTSDB framework.
             \item Managing product development and production of the IoT gateways and sensors.
-            This involves the electronics manufacturing processes from concept to production design.
-            \item Developed the firmware for the water measurement sensor.
+            This involved all aspects of the manufacturing processes from product development to production.
         \end{itemize}
         }
         % OUTSMART
         \longitem{Software Developer}{}{Outsmart Power Systems}{Aug 2015 - Dec 2016}
         \itemdetails{
         \begin{itemize}[itemsep=0pt]
-            \item Created a content management system for maintaining customer data on the web.
+            \item Created a content management system for maintaining business related customer data on the web.
             This included responsive web design elements for both mobile and desktop using AngularJS.
             \item Built a websocket-based IoT communication platform using Java.
-            \item Designed custom and responsive D3 graphs for in depth energy analysis.
+            \item Designed responsive D3 charts for in depth analysis of data collected from IoT sensors.
         \end{itemize}
         }
 
@@ -104,25 +115,24 @@
         \longitem{Web Based 3D Slicer}{}{University of Massachusetts Lowell}{2015 - 2016}
         \itemdetails{
         Wrote one of the first 3D print slicers to be deployed to the web.
-        It included a Gcode analyzer with detailed settings input.
         This project was also tested on a 3D printer of my own design.
         }
         \longitem{Solidworks Design}{}{Massachusetts Bay Community College}{2015 - Present}
         \itemdetails{
-        Mechanical Engineering studies part time and have a background designing parts in Solidworks.
-        Several of my designs are now in production applications for Efacto Power.
+        Studied Mechanical Engineering part time and I have a background designing parts in Solidworks.
+        Several of my designs were used in production applications at Efacto Power.
         }
 
-%        \section{Research}
-%        \longitem{Research Title}{}{Place}{Start Date - End Date}
-%        \itemdetails{
-%        \textit{Styles here are kept.}
-%        }
-%        \section{Awards}
-%        \shortitem{Clean Energy Internship}
-%        \itemdetails{Short items can also be used on the right column.}
-%        \section{Other}
-%        Custom styles can also be used here.
-%        For example, a list of publications using BibTeX.
+        %        \section{Research}
+        %        \longitem{Research Title}{}{Place}{Start Date - End Date}
+        %        \itemdetails{
+        %        \textit{Styles here are kept.}
+        %        }
+        %        \section{Awards}
+        %        \shortitem{Clean Energy Internship}
+        %        \itemdetails{Short items can also be used on the right column.}
+        %        \section{Other}
+        %        Custom styles can also be used here.
+        %        For example, a list of publications using BibTeX.
     \end{minipage}
 \end{document}
